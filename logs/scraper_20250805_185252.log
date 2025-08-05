@@ -1,0 +1,133 @@
+2025-08-05 18:52:52,507 - __main__ - INFO - ============================================================
+2025-08-05 18:52:52,508 - __main__ - INFO - PAKISTAN MEDICAL INDUSTRY DRUG DATABASE SCRAPER
+2025-08-05 18:52:52,508 - __main__ - INFO - ============================================================
+2025-08-05 18:52:52,508 - __main__ - INFO - Started at: 2025-08-05 18:52:52.508595
+2025-08-05 18:52:52,508 - __main__ - INFO - Starting to scrape letter: a
+2025-08-05 18:52:52,578 - scraper.dawaai_scraper - INFO - Starting to scrape letter: a
+2025-08-05 18:52:56,531 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dawaai.pk:443
+2025-08-05 18:53:01,705 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /all-medicines/a HTTP/1.1" 200 None
+2025-08-05 18:53:03,956 - scraper.dawaai_scraper - INFO - Found 1793 medicine links on https://dawaai.pk/all-medicines/a
+2025-08-05 18:53:08,001 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 18:53:09,742 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/arnil-1-34352.html HTTP/1.1" 200 45465
+2025-08-05 18:53:10,160 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 1
+2025-08-05 18:53:10,910 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): static-media.dawaai.pk:443
+2025-08-05 18:53:11,404 - urllib3.connectionpool - DEBUG - https://static-media.dawaai.pk:443 "GET /img/product-warnings/Pregnancy.webp HTTP/1.1" 200 3662
+2025-08-05 18:53:11,405 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-05 18:53:11,407 - scraper.dawaai_scraper - INFO - Successfully processed: arnil-1-34352
+2025-08-05 18:53:15,227 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 18:53:16,715 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/artifen-34359.html HTTP/1.1" 200 46401
+2025-08-05 18:53:17,242 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 2
+2025-08-05 18:53:19,190 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): product.dawaai.pk:443
+2025-08-05 18:53:19,952 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /800/abbart34359_1648113710_2.png HTTP/1.1" 200 266353
+2025-08-05 18:53:20,310 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-08-05 18:53:20,310 - PIL.PngImagePlugin - DEBUG - STREAM b'PLTE' 41 768
+2025-08-05 18:53:20,311 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 821 265516
+2025-08-05 18:53:20,314 - scraper.image_downloader - INFO - Image downloaded successfully: 2.png
+2025-08-05 18:53:20,329 - scraper.database_handler - INFO - Medicine updated successfully: artifen-34359
+2025-08-05 18:53:20,330 - scraper.dawaai_scraper - INFO - Successfully processed: artifen-34359
+2025-08-05 18:53:23,414 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 18:53:25,238 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/advacort-ointment-34383.html HTTP/1.1" 200 42429
+2025-08-05 18:53:25,613 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 3
+2025-08-05 18:53:27,532 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /200/atcadv34383_1627893258_1.webp HTTP/1.1" 200 2488
+2025-08-05 18:53:27,534 - PIL.Image - DEBUG - Importing AvifImagePlugin
+2025-08-05 18:53:27,577 - PIL.Image - DEBUG - Importing BlpImagePlugin
+2025-08-05 18:53:27,579 - PIL.Image - DEBUG - Importing BmpImagePlugin
+2025-08-05 18:53:27,579 - PIL.Image - DEBUG - Importing BufrStubImagePlugin
+2025-08-05 18:53:27,581 - PIL.Image - DEBUG - Importing CurImagePlugin
+2025-08-05 18:53:27,582 - PIL.Image - DEBUG - Importing DcxImagePlugin
+2025-08-05 18:53:27,585 - PIL.Image - DEBUG - Importing DdsImagePlugin
+2025-08-05 18:53:27,591 - PIL.Image - DEBUG - Importing EpsImagePlugin
+2025-08-05 18:53:27,593 - PIL.Image - DEBUG - Importing FitsImagePlugin
+2025-08-05 18:53:27,594 - PIL.Image - DEBUG - Importing FliImagePlugin
+2025-08-05 18:53:27,596 - PIL.Image - DEBUG - Importing FpxImagePlugin
+2025-08-05 18:53:27,597 - PIL.Image - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-08-05 18:53:27,597 - PIL.Image - DEBUG - Importing FtexImagePlugin
+2025-08-05 18:53:27,599 - PIL.Image - DEBUG - Importing GbrImagePlugin
+2025-08-05 18:53:27,601 - PIL.Image - DEBUG - Importing GifImagePlugin
+2025-08-05 18:53:27,601 - PIL.Image - DEBUG - Importing GribStubImagePlugin
+2025-08-05 18:53:27,602 - PIL.Image - DEBUG - Importing Hdf5StubImagePlugin
+2025-08-05 18:53:27,604 - PIL.Image - DEBUG - Importing IcnsImagePlugin
+2025-08-05 18:53:27,608 - PIL.Image - DEBUG - Importing IcoImagePlugin
+2025-08-05 18:53:27,610 - PIL.Image - DEBUG - Importing ImImagePlugin
+2025-08-05 18:53:27,612 - PIL.Image - DEBUG - Importing ImtImagePlugin
+2025-08-05 18:53:27,613 - PIL.Image - DEBUG - Importing IptcImagePlugin
+2025-08-05 18:53:27,615 - PIL.Image - DEBUG - Importing JpegImagePlugin
+2025-08-05 18:53:27,616 - PIL.Image - DEBUG - Importing Jpeg2KImagePlugin
+2025-08-05 18:53:27,616 - PIL.Image - DEBUG - Importing McIdasImagePlugin
+2025-08-05 18:53:27,617 - PIL.Image - DEBUG - Importing MicImagePlugin
+2025-08-05 18:53:27,619 - PIL.Image - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-08-05 18:53:27,619 - PIL.Image - DEBUG - Importing MpegImagePlugin
+2025-08-05 18:53:27,621 - PIL.Image - DEBUG - Importing MpoImagePlugin
+2025-08-05 18:53:27,629 - PIL.Image - DEBUG - Importing MspImagePlugin
+2025-08-05 18:53:27,631 - PIL.Image - DEBUG - Importing PalmImagePlugin
+2025-08-05 18:53:27,633 - PIL.Image - DEBUG - Importing PcdImagePlugin
+2025-08-05 18:53:27,634 - PIL.Image - DEBUG - Importing PcxImagePlugin
+2025-08-05 18:53:27,635 - PIL.Image - DEBUG - Importing PdfImagePlugin
+2025-08-05 18:53:27,642 - PIL.Image - DEBUG - Importing PixarImagePlugin
+2025-08-05 18:53:27,644 - PIL.Image - DEBUG - Importing PngImagePlugin
+2025-08-05 18:53:27,645 - PIL.Image - DEBUG - Importing PpmImagePlugin
+2025-08-05 18:53:27,645 - PIL.Image - DEBUG - Importing PsdImagePlugin
+2025-08-05 18:53:27,647 - PIL.Image - DEBUG - Importing QoiImagePlugin
+2025-08-05 18:53:27,648 - PIL.Image - DEBUG - Importing SgiImagePlugin
+2025-08-05 18:53:27,650 - PIL.Image - DEBUG - Importing SpiderImagePlugin
+2025-08-05 18:53:27,651 - PIL.Image - DEBUG - Importing SunImagePlugin
+2025-08-05 18:53:27,653 - PIL.Image - DEBUG - Importing TgaImagePlugin
+2025-08-05 18:53:27,654 - PIL.Image - DEBUG - Importing TiffImagePlugin
+2025-08-05 18:53:27,654 - PIL.Image - DEBUG - Importing WebPImagePlugin
+2025-08-05 18:53:27,686 - PIL.Image - DEBUG - Importing WmfImagePlugin
+2025-08-05 18:53:27,688 - PIL.Image - DEBUG - Importing XbmImagePlugin
+2025-08-05 18:53:27,691 - PIL.Image - DEBUG - Importing XpmImagePlugin
+2025-08-05 18:53:27,692 - PIL.Image - DEBUG - Importing XVThumbImagePlugin
+2025-08-05 18:53:27,695 - scraper.image_downloader - INFO - Image downloaded successfully: 3.jpg
+2025-08-05 18:53:27,699 - scraper.database_handler - INFO - Medicine updated successfully: advacort-ointment-34383
+2025-08-05 18:53:27,700 - scraper.dawaai_scraper - INFO - Successfully processed: advacort-ointment-34383
+2025-08-05 18:53:30,661 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 18:53:33,716 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/av-sartan-10-mg-160-mg-34937.html HTTP/1.1" 200 46712
+2025-08-05 18:53:34,098 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 4
+2025-08-05 18:53:35,119 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /200/baravs34937_1627893068_1.webp HTTP/1.1" 200 4224
+2025-08-05 18:53:35,121 - scraper.image_downloader - INFO - Image downloaded successfully: 4.jpg
+2025-08-05 18:53:35,136 - scraper.database_handler - INFO - Medicine updated successfully: av-sartan-10-mg-160-mg-34937
+2025-08-05 18:53:35,137 - scraper.dawaai_scraper - INFO - Successfully processed: av-sartan-10-mg-160-mg-34937
+2025-08-05 18:53:39,785 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/aidra-2-35514.html HTTP/1.1" 200 43968
+2025-08-05 18:53:40,161 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 5
+2025-08-05 18:53:42,145 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (2): static-media.dawaai.pk:443
+2025-08-05 18:53:42,541 - urllib3.connectionpool - DEBUG - https://static-media.dawaai.pk:443 "GET /img/product-warnings/Pregnancy.webp HTTP/1.1" 200 3662
+2025-08-05 18:53:42,542 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-05 18:53:42,543 - scraper.dawaai_scraper - INFO - Successfully processed: aidra-2-35514
+2025-08-05 18:53:44,785 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/acabel-1-35552.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-05 18:53:50,365 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (2): dawaai.pk:443
+2025-08-05 18:53:52,086 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/acabel-1-35552.html HTTP/1.1" 200 40493
+2025-08-05 18:53:52,338 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 6
+2025-08-05 18:53:53,045 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (3): static-media.dawaai.pk:443
+2025-08-05 18:53:53,446 - urllib3.connectionpool - DEBUG - https://static-media.dawaai.pk:443 "GET /img/product-warnings/Pregnancy.webp HTTP/1.1" 200 3662
+2025-08-05 18:53:53,447 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-05 18:53:53,447 - scraper.dawaai_scraper - INFO - Successfully processed: acabel-1-35552
+2025-08-05 18:53:58,110 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/acabel-2-35553.html HTTP/1.1" 200 41169
+2025-08-05 18:53:58,345 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 7
+2025-08-05 18:53:59,674 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /800/conaca35553_1627892988_1.png HTTP/1.1" 200 154737
+2025-08-05 18:53:59,690 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-08-05 18:53:59,691 - PIL.PngImagePlugin - DEBUG - STREAM b'PLTE' 41 498
+2025-08-05 18:53:59,691 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 551 154170
+2025-08-05 18:53:59,692 - scraper.image_downloader - INFO - Image downloaded successfully: 7.png
+2025-08-05 18:53:59,707 - scraper.database_handler - INFO - Medicine updated successfully: acabel-2-35553
+2025-08-05 18:53:59,708 - scraper.dawaai_scraper - INFO - Successfully processed: acabel-2-35553
+2025-08-05 18:54:03,628 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/atcam-35554.html HTTP/1.1" 200 40629
+2025-08-05 18:54:03,850 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 8
+2025-08-05 18:54:06,178 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /800/atcatc35554_1627892887_1.png HTTP/1.1" 200 222475
+2025-08-05 18:54:06,197 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-08-05 18:54:06,197 - PIL.PngImagePlugin - DEBUG - STREAM b'PLTE' 41 768
+2025-08-05 18:54:06,198 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 821 221638
+2025-08-05 18:54:06,201 - scraper.image_downloader - INFO - Image downloaded successfully: 8.png
+2025-08-05 18:54:06,216 - scraper.database_handler - INFO - Medicine updated successfully: atcam-35554
+2025-08-05 18:54:06,217 - scraper.dawaai_scraper - INFO - Successfully processed: atcam-35554
+2025-08-05 18:54:10,185 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/apranax-35746.html HTTP/1.1" 200 44003
+2025-08-05 18:54:10,569 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 9
+2025-08-05 18:54:11,777 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /800/marapr35746_1627891938_2.png HTTP/1.1" 200 227583
+2025-08-05 18:54:11,807 - PIL.PngImagePlugin - DEBUG - STREAM b'IHDR' 16 13
+2025-08-05 18:54:11,808 - PIL.PngImagePlugin - DEBUG - STREAM b'PLTE' 41 225
+2025-08-05 18:54:11,809 - PIL.PngImagePlugin - DEBUG - STREAM b'IDAT' 278 227289
+2025-08-05 18:54:11,812 - scraper.image_downloader - INFO - Image downloaded successfully: 9.png
+2025-08-05 18:54:11,831 - scraper.database_handler - INFO - Medicine updated successfully: apranax-35746
+2025-08-05 18:54:11,832 - scraper.dawaai_scraper - INFO - Successfully processed: apranax-35746
+2025-08-05 18:54:15,384 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/aproxen-1-35751.html HTTP/1.1" 200 44873
+2025-08-05 18:54:15,755 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 10

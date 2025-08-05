@@ -1,0 +1,115 @@
+2025-08-05 19:20:20,102 - __main__ - INFO - ============================================================
+2025-08-05 19:20:20,102 - __main__ - INFO - PAKISTAN MEDICAL INDUSTRY DRUG DATABASE SCRAPER
+2025-08-05 19:20:20,103 - __main__ - INFO - ============================================================
+2025-08-05 19:20:20,103 - __main__ - INFO - Started at: 2025-08-05 19:20:20.103720
+2025-08-05 19:20:20,104 - __main__ - INFO - Starting to scrape letter: a
+2025-08-05 19:20:20,166 - scraper.dawaai_scraper - INFO - Starting to scrape letter: a
+2025-08-05 19:20:22,682 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): dawaai.pk:443
+2025-08-05 19:20:28,213 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /all-medicines/a HTTP/1.1" 200 None
+2025-08-05 19:20:38,568 - scraper.dawaai_scraper - INFO - Found 5379 medicine links on https://dawaai.pk/all-medicines/a
+2025-08-05 19:20:38,615 - scraper.dawaai_scraper - INFO - Medicine already exists: arnil-1-34352
+2025-08-05 19:20:38,616 - scraper.dawaai_scraper - INFO - Medicine already exists: arnil-1-34352
+2025-08-05 19:20:38,618 - scraper.dawaai_scraper - INFO - Medicine already exists: arnil-1-34352
+2025-08-05 19:20:38,620 - scraper.dawaai_scraper - INFO - Medicine already exists: artifen-34359
+2025-08-05 19:20:38,621 - scraper.dawaai_scraper - INFO - Medicine already exists: artifen-34359
+2025-08-05 19:20:38,622 - scraper.dawaai_scraper - INFO - Medicine already exists: artifen-34359
+2025-08-05 19:20:38,624 - scraper.dawaai_scraper - INFO - Medicine already exists: advacort-ointment-34383
+2025-08-05 19:20:38,626 - scraper.dawaai_scraper - INFO - Medicine already exists: advacort-ointment-34383
+2025-08-05 19:20:38,627 - scraper.dawaai_scraper - INFO - Medicine already exists: advacort-ointment-34383
+2025-08-05 19:20:38,629 - scraper.dawaai_scraper - INFO - Medicine already exists: av-sartan-10-mg-160-mg-34937
+2025-08-05 19:20:38,631 - scraper.dawaai_scraper - INFO - Medicine already exists: av-sartan-10-mg-160-mg-34937
+2025-08-05 19:20:38,632 - scraper.dawaai_scraper - INFO - Medicine already exists: av-sartan-10-mg-160-mg-34937
+2025-08-05 19:20:38,633 - scraper.dawaai_scraper - INFO - Medicine already exists: aidra-2-35514
+2025-08-05 19:20:38,635 - scraper.dawaai_scraper - INFO - Medicine already exists: aidra-2-35514
+2025-08-05 19:20:38,636 - scraper.dawaai_scraper - INFO - Medicine already exists: aidra-2-35514
+2025-08-05 19:20:38,638 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-1-35552
+2025-08-05 19:20:38,639 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-1-35552
+2025-08-05 19:20:38,641 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-1-35552
+2025-08-05 19:20:38,642 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-2-35553
+2025-08-05 19:20:38,643 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-2-35553
+2025-08-05 19:20:38,644 - scraper.dawaai_scraper - INFO - Medicine already exists: acabel-2-35553
+2025-08-05 19:20:38,645 - scraper.dawaai_scraper - INFO - Medicine already exists: atcam-35554
+2025-08-05 19:20:38,646 - scraper.dawaai_scraper - INFO - Medicine already exists: atcam-35554
+2025-08-05 19:20:38,647 - scraper.dawaai_scraper - INFO - Medicine already exists: atcam-35554
+2025-08-05 19:20:38,648 - scraper.dawaai_scraper - INFO - Medicine already exists: apranax-35746
+2025-08-05 19:20:38,649 - scraper.dawaai_scraper - INFO - Medicine already exists: apranax-35746
+2025-08-05 19:20:38,650 - scraper.dawaai_scraper - INFO - Medicine already exists: apranax-35746
+2025-08-05 19:20:38,653 - scraper.dawaai_scraper - INFO - Medicine already exists: aproxen-1-35751
+2025-08-05 19:20:38,654 - scraper.dawaai_scraper - INFO - Medicine already exists: aproxen-1-35751
+2025-08-05 19:20:38,655 - scraper.dawaai_scraper - INFO - Medicine already exists: aproxen-1-35751
+2025-08-05 19:20:42,477 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 19:20:44,185 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/axicam-35980.html HTTP/1.1" 200 43301
+2025-08-05 19:20:44,693 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 11
+2025-08-05 19:20:46,132 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): static-media.dawaai.pk:443
+2025-08-05 19:20:46,672 - urllib3.connectionpool - DEBUG - https://static-media.dawaai.pk:443 "GET /img/product-warnings/Pregnancy.webp HTTP/1.1" 200 3662
+2025-08-05 19:20:46,673 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-05 19:20:46,673 - scraper.dawaai_scraper - INFO - Successfully processed: axicam-35980
+2025-08-05 19:20:46,675 - scraper.dawaai_scraper - INFO - Medicine already exists: axicam-35980
+2025-08-05 19:20:46,677 - scraper.dawaai_scraper - INFO - Medicine already exists: axicam-35980
+2025-08-05 19:20:51,142 - urllib3.connectionpool - DEBUG - Resetting dropped connection: dawaai.pk
+2025-08-05 19:20:53,157 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/adronil-3-mg-3-ml-36366.html HTTP/1.1" 200 42263
+2025-08-05 19:20:53,666 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 12
+2025-08-05 19:20:54,268 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): product.dawaai.pk:443
+2025-08-05 19:20:54,963 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /200/seaadr36366_1.webp HTTP/1.1" 200 5036
+2025-08-05 19:20:55,013 - PIL.Image - DEBUG - Importing AvifImagePlugin
+2025-08-05 19:20:55,042 - PIL.Image - DEBUG - Importing BlpImagePlugin
+2025-08-05 19:20:55,044 - PIL.Image - DEBUG - Importing BmpImagePlugin
+2025-08-05 19:20:55,045 - PIL.Image - DEBUG - Importing BufrStubImagePlugin
+2025-08-05 19:20:55,047 - PIL.Image - DEBUG - Importing CurImagePlugin
+2025-08-05 19:20:55,048 - PIL.Image - DEBUG - Importing DcxImagePlugin
+2025-08-05 19:20:55,051 - PIL.Image - DEBUG - Importing DdsImagePlugin
+2025-08-05 19:20:55,056 - PIL.Image - DEBUG - Importing EpsImagePlugin
+2025-08-05 19:20:55,059 - PIL.Image - DEBUG - Importing FitsImagePlugin
+2025-08-05 19:20:55,060 - PIL.Image - DEBUG - Importing FliImagePlugin
+2025-08-05 19:20:55,061 - PIL.Image - DEBUG - Importing FpxImagePlugin
+2025-08-05 19:20:55,063 - PIL.Image - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-08-05 19:20:55,063 - PIL.Image - DEBUG - Importing FtexImagePlugin
+2025-08-05 19:20:55,065 - PIL.Image - DEBUG - Importing GbrImagePlugin
+2025-08-05 19:20:55,066 - PIL.Image - DEBUG - Importing GifImagePlugin
+2025-08-05 19:20:55,067 - PIL.Image - DEBUG - Importing GribStubImagePlugin
+2025-08-05 19:20:55,068 - PIL.Image - DEBUG - Importing Hdf5StubImagePlugin
+2025-08-05 19:20:55,070 - PIL.Image - DEBUG - Importing IcnsImagePlugin
+2025-08-05 19:20:55,074 - PIL.Image - DEBUG - Importing IcoImagePlugin
+2025-08-05 19:20:55,076 - PIL.Image - DEBUG - Importing ImImagePlugin
+2025-08-05 19:20:55,077 - PIL.Image - DEBUG - Importing ImtImagePlugin
+2025-08-05 19:20:55,079 - PIL.Image - DEBUG - Importing IptcImagePlugin
+2025-08-05 19:20:55,080 - PIL.Image - DEBUG - Importing JpegImagePlugin
+2025-08-05 19:20:55,081 - PIL.Image - DEBUG - Importing Jpeg2KImagePlugin
+2025-08-05 19:20:55,081 - PIL.Image - DEBUG - Importing McIdasImagePlugin
+2025-08-05 19:20:55,083 - PIL.Image - DEBUG - Importing MicImagePlugin
+2025-08-05 19:20:55,085 - PIL.Image - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-08-05 19:20:55,085 - PIL.Image - DEBUG - Importing MpegImagePlugin
+2025-08-05 19:20:55,087 - PIL.Image - DEBUG - Importing MpoImagePlugin
+2025-08-05 19:20:55,092 - PIL.Image - DEBUG - Importing MspImagePlugin
+2025-08-05 19:20:55,094 - PIL.Image - DEBUG - Importing PalmImagePlugin
+2025-08-05 19:20:55,095 - PIL.Image - DEBUG - Importing PcdImagePlugin
+2025-08-05 19:20:55,097 - PIL.Image - DEBUG - Importing PcxImagePlugin
+2025-08-05 19:20:55,097 - PIL.Image - DEBUG - Importing PdfImagePlugin
+2025-08-05 19:20:55,105 - PIL.Image - DEBUG - Importing PixarImagePlugin
+2025-08-05 19:20:55,107 - PIL.Image - DEBUG - Importing PngImagePlugin
+2025-08-05 19:20:55,107 - PIL.Image - DEBUG - Importing PpmImagePlugin
+2025-08-05 19:20:55,107 - PIL.Image - DEBUG - Importing PsdImagePlugin
+2025-08-05 19:20:55,109 - PIL.Image - DEBUG - Importing QoiImagePlugin
+2025-08-05 19:20:55,110 - PIL.Image - DEBUG - Importing SgiImagePlugin
+2025-08-05 19:20:55,112 - PIL.Image - DEBUG - Importing SpiderImagePlugin
+2025-08-05 19:20:55,113 - PIL.Image - DEBUG - Importing SunImagePlugin
+2025-08-05 19:20:55,115 - PIL.Image - DEBUG - Importing TgaImagePlugin
+2025-08-05 19:20:55,116 - PIL.Image - DEBUG - Importing TiffImagePlugin
+2025-08-05 19:20:55,117 - PIL.Image - DEBUG - Importing WebPImagePlugin
+2025-08-05 19:20:55,145 - PIL.Image - DEBUG - Importing WmfImagePlugin
+2025-08-05 19:20:55,147 - PIL.Image - DEBUG - Importing XbmImagePlugin
+2025-08-05 19:20:55,149 - PIL.Image - DEBUG - Importing XpmImagePlugin
+2025-08-05 19:20:55,151 - PIL.Image - DEBUG - Importing XVThumbImagePlugin
+2025-08-05 19:20:55,154 - scraper.image_downloader - INFO - Image downloaded successfully: 12.jpg
+2025-08-05 19:20:55,169 - scraper.database_handler - INFO - Medicine updated successfully: adronil-3-mg-3-ml-36366
+2025-08-05 19:20:55,169 - scraper.dawaai_scraper - INFO - Successfully processed: adronil-3-mg-3-ml-36366
+2025-08-05 19:20:55,171 - scraper.dawaai_scraper - INFO - Medicine already exists: adronil-3-mg-3-ml-36366
+2025-08-05 19:20:55,172 - scraper.dawaai_scraper - INFO - Medicine already exists: adronil-3-mg-3-ml-36366
+2025-08-05 19:20:59,132 - urllib3.connectionpool - DEBUG - https://dawaai.pk:443 "GET /medicine/aurora-tab-5mg-10s-36775.html HTTP/1.1" 200 46122
+2025-08-05 19:20:59,615 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 13
+2025-08-05 19:21:01,320 - urllib3.connectionpool - DEBUG - https://product.dawaai.pk:443 "GET /200/feraur36775_1627890910_1.webp HTTP/1.1" 200 3258
+2025-08-05 19:21:01,326 - scraper.image_downloader - INFO - Image downloaded successfully: 13.jpg
+2025-08-05 19:21:01,335 - scraper.database_handler - INFO - Medicine updated successfully: aurora-tab-5mg-10s-36775
+2025-08-05 19:21:01,336 - scraper.dawaai_scraper - INFO - Successfully processed: aurora-tab-5mg-10s-36775
+2025-08-05 19:21:01,338 - scraper.dawaai_scraper - INFO - Medicine already exists: aurora-tab-5mg-10s-36775
+2025-08-05 19:21:01,339 - scraper.dawaai_scraper - INFO - Medicine already exists: aurora-tab-5mg-10s-36775

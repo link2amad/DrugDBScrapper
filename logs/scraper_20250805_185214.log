@@ -1,0 +1,11 @@
+2025-08-05 18:52:14,322 - __main__ - INFO - ============================================================
+2025-08-05 18:52:14,322 - __main__ - INFO - PAKISTAN MEDICAL INDUSTRY DRUG DATABASE SCRAPER
+2025-08-05 18:52:14,323 - __main__ - INFO - ============================================================
+2025-08-05 18:52:14,323 - __main__ - INFO - Started at: 2025-08-05 18:52:14.323152
+2025-08-05 18:52:14,323 - __main__ - INFO - Testing database connection...
+2025-08-05 18:52:14,534 - scraper.database_handler - INFO - Medicines table created/verified successfully
+2025-08-05 18:52:14,534 - __main__ - INFO - Database connection successful!
+2025-08-05 18:52:14,534 - __main__ - INFO - ============================================================
+2025-08-05 18:52:14,547 - __main__ - INFO - SCRAPER COMPLETED SUCCESSFULLY
+2025-08-05 18:52:14,548 - __main__ - INFO - Finished at: 2025-08-05 18:52:14.548070
+2025-08-05 18:52:14,548 - __main__ - INFO - ============================================================
