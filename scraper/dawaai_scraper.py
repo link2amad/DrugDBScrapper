@@ -104,27 +104,79 @@ class DawaaiScraper:
             
             soup = BeautifulSoup(response.content, 'html.parser')
             
-            # Look for medicine cards/containers
-            medicine_containers = soup.select('.product-card, .medicine-card, .item, [class*="card"], [class*="product"]')
+            # Method 1: Direct link search - find ALL medicine links first
+            all_medicine_links = []
+            all_links = soup.find_all('a', href=True)
             
-            if not medicine_containers:
-                # Fallback: look for any container with medicine links
-                medicine_containers = soup.find_all('div', class_=lambda x: x and any(keyword in x.lower() for keyword in ['product', 'medicine', 'item']))
+            for link in all_links:
+                href = link.get('href')
+                if href and '/medicine/' in href:
+                    full_url = urljoin(self.base_url, href)
+                    # Avoid duplicates
+                    if full_url not in [item['url'] for item in medicine_data]:
+                        all_medicine_links.append(link)
             
-            for container in medicine_containers:
-                try:
-                    # Extract medicine link
-                    link_element = container.select_one('a[href*="/medicine/"]')
-                    if not link_element:
+            self.logger.info(f"Found {len(all_medicine_links)} medicine links via direct search")
+            
+            # Method 2: Container-based search as fallback (if direct search found too few)
+            if len(all_medicine_links) < 5:  # If we found very few links, try container approach
+                self.logger.info("Direct search found few links, trying container-based approach")
+                medicine_containers = soup.select('.product-card, .medicine-card, .item, [class*="card"], [class*="product"]')
+                
+                if not medicine_containers:
+                    # Fallback: look for any container with medicine links
+                    medicine_containers = soup.find_all('div', class_=lambda x: x and any(keyword in x.lower() for keyword in ['product', 'medicine', 'item']))
+                
+                for container in medicine_containers:
+                    try:
+                        link_element = container.select_one('a[href*="/medicine/"]')
+                        if link_element and link_element not in all_medicine_links:
+                            all_medicine_links.append(link_element)
+                    except Exception as e:
+                        self.logger.warning(f"Error processing medicine container: {e}")
                         continue
-                    
-                    href = link_element.get('href')
+            
+            # Process all found links
+            for link in all_medicine_links:
+                try:
+                    href = link.get('href')
                     if not href or '/medicine/' not in href:
                         continue
                     
                     full_url = urljoin(self.base_url, href)
                     
-                    # Extract basic info from listing page
+                    # Avoid duplicates
+                    if any(item['url'] == full_url for item in medicine_data):
+                        continue
+                    
+                    # Find the correct container for this link to extract listing data
+                    # Try multiple strategies to find the right container
+                    container = None
+                    
+                    # Strategy 1: Look for parent with 'card' class (most specific)
+                    container = link.find_parent(class_='card')
+                    
+                    # Strategy 2: Look for parent with 'card-body' class
+                    if not container:
+                        container = link.find_parent(class_='card-body')
+                    
+                    # Strategy 3: Look for any parent that contains price information
+                    if not container:
+                        for parent in link.parents:
+                            if parent and parent.get_text():
+                                parent_text = parent.get_text(strip=True)
+                                if 'Rs' in parent_text and ('Pack Size' in parent_text or 'Add to cart' in parent_text):
+                                    container = parent
+                                    break
+                    
+                    # Strategy 4: Look for parent with medicine/product classes
+                    if not container:
+                        container = link.find_parent(class_=lambda x: x and any(keyword in x.lower() for keyword in ['product', 'medicine', 'card', 'item']))
+                    
+                    # Strategy 5: Fallback to immediate parent
+                    if not container:
+                        container = link.find_parent() or link
+                    
                     listing_data = self._extract_listing_page_data(container)
                     
                     medicine_data.append({
@@ -136,10 +188,13 @@ class DawaaiScraper:
                     })
                     
                 except Exception as e:
-                    self.logger.warning(f"Error processing medicine container: {e}")
+                    self.logger.warning(f"Error processing medicine link: {e}")
                     continue
             
-            self.logger.info(f"Found {len(medicine_data)} medicine links on {letter_url}")
+            self.logger.info(f"Found {len(medicine_data)} unique medicine links on {letter_url}")
+            if medicine_data:
+                self.logger.debug(f"Sample URLs found: {[item['url'] for item in medicine_data[:3]]}")
+            
             return medicine_data
             
         except Exception as e:
@@ -185,32 +240,53 @@ class DawaaiScraper:
             # Clean the text first - remove promotional content
             cleaned_text = self._clean_promotional_text(text)
             
-            # Look for patterns like "BrandName" followed by "Pack Size"
-            # Common patterns: "AxicamMass-PH Health", "AdronilSearle"
+            # Pattern 1: Look for text between medicine name and "Pack Size"
+            # Example: "Acefyl CoughNabi QasimPack Size: 120ml"
+            # We want to extract "Nabi Qasim"
             
-            # Pattern 1: Look for text before "Pack Size"
+            # First, try to find the pattern: MedicineNameBrandNamePack Size
             pack_size_match = re.search(r'Pack\s+Size', cleaned_text, re.IGNORECASE)
             if pack_size_match:
                 before_pack_size = cleaned_text[:pack_size_match.start()].strip()
                 if before_pack_size:
-                    # Clean up the brand name
-                    brand = self._clean_brand_name(before_pack_size)
-                    if brand:
-                        return brand
+                    # Look for brand name pattern: MedicineNameBrandName
+                    # Brand names are usually capitalized words that come after the medicine name
+                    brand_pattern = r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)$'
+                    brand_match = re.search(brand_pattern, before_pack_size)
+                    if brand_match:
+                        brand = brand_match.group(1).strip()
+                        brand = self._clean_brand_name(brand)
+                        if brand and len(brand) > 2 and len(brand) < 50:
+                            return brand
             
-            # Pattern 2: Look for common brand name patterns
+            # Pattern 2: Look for brand name followed by "Pack Size" or "Rs"
             brand_patterns = [
-                r'^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)',  # Capitalized words
-                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+Pack',  # Brand followed by "Pack"
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+Pack\s+Size',  # Brand followed by "Pack Size"
                 r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+Rs',  # Brand followed by "Rs"
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+Add\s+to\s+cart',  # Brand followed by "Add to cart"
             ]
             
             for pattern in brand_patterns:
-                match = re.search(pattern, cleaned_text)
+                match = re.search(pattern, cleaned_text, re.IGNORECASE)
                 if match:
                     brand = match.group(1).strip()
                     brand = self._clean_brand_name(brand)
-                    if brand and len(brand) > 2 and len(brand) < 50:  # Reasonable brand name length
+                    if brand and len(brand) > 2 and len(brand) < 50:
+                        return brand
+            
+            # Pattern 3: Look for common brand name patterns in the entire text
+            # This is a fallback for when the above patterns don't work
+            common_brand_patterns = [
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:Health|Limited|Pharma|Laboratories?|Ltd|Inc|Corp|Company|International|Industries?|Group|Enterprises?)',
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+(?:Pakistan|Pvt|Private|Public|Co|Corporation)',
+            ]
+            
+            for pattern in common_brand_patterns:
+                match = re.search(pattern, cleaned_text, re.IGNORECASE)
+                if match:
+                    brand = match.group(1).strip()
+                    brand = self._clean_brand_name(brand)
+                    if brand and len(brand) > 2 and len(brand) < 50:
                         return brand
             
             return None
@@ -260,23 +336,12 @@ class DawaaiScraper:
             if not brand_text:
                 return None
             
-            # Remove common suffixes and prefixes
-            suffixes_to_remove = [
-                r'\s+(Health|Limited|Pharma|Laboratories?|Ltd|Inc|Corp|Company|International|Industries?|Group|Enterprises?)$',
-                r'\s+(Pakistan|Pvt|Private|Public|Co|Corporation)$',
-                r'\s+(Pharmaceuticals?|Medicines?|Drugs?|Products?)$',
-                r'\s+(Manufacturing|Trading|Marketing|Distribution)$',
-            ]
-            
-            cleaned_brand = brand_text
-            for pattern in suffixes_to_remove:
-                cleaned_brand = re.sub(pattern, '', cleaned_brand, flags=re.IGNORECASE)
-            
-            # Remove extra whitespace and clean up
-            cleaned_brand = re.sub(r'\s+', ' ', cleaned_brand).strip()
+            # Don't remove important brand name parts - keep the full brand name
+            # Only remove extra whitespace and clean up
+            cleaned_brand = re.sub(r'\s+', ' ', brand_text).strip()
             
             # Validate brand name
-            if cleaned_brand and len(cleaned_brand) > 2 and len(cleaned_brand) < 50:
+            if cleaned_brand and len(cleaned_brand) > 2 and len(cleaned_brand) < 100:
                 # Check if it contains reasonable brand name characters
                 if re.match(r'^[A-Za-z\s\-\.&]+$', cleaned_brand):
                     return cleaned_brand
@@ -533,19 +598,37 @@ class DawaaiScraper:
     def _extract_generic_name(self, soup):
         """Extract generic name with enhanced selectors"""
         try:
-            # Enhanced selectors for generic information
+            # First, try to find generic information in the specific structure
+            # Look for div with flex-column class that contains generic information
+            generic_containers = soup.select('div.d.flex-column')
+            
+            for container in generic_containers:
+                # Look for small tag with generate-img class (contains description)
+                small_tag = container.select_one('small.generate-img')
+                if small_tag:
+                    # Look for all anchor tags that contain generic information
+                    generic_links = container.select('a[href*="/generic/"]')
+                    
+                    if generic_links:
+                        generic_names = []
+                        for link in generic_links:
+                            generic_text = link.get_text(strip=True)
+                            if generic_text and len(generic_text) > 2:
+                                generic_names.append(generic_text)
+                        
+                        if generic_names:
+                            # Join all generic names with commas
+                            return ', '.join(generic_names)
+            
+            # Fallback: Try to find generic name in specific elements
             generic_selectors = [
                 '.generic-name',
                 '.generic-info',
                 '.active-ingredient',
                 '.ingredient',
                 '.drug-ingredient',
-                'span:contains("Generic")',
-                'div:contains("Generic")',
-                'span:contains("Active")',
-                'div:contains("Active")',
-                'span:contains("Ingredient")',
-                'div:contains("Ingredient")',
+                '[class*="generic"]',
+                '[class*="ingredient"]',
                 '.product-description',
                 '.medicine-description'
             ]
@@ -559,24 +642,44 @@ class DawaaiScraper:
                         generic = re.sub(r'^Generic\s*:\s*', '', generic, flags=re.IGNORECASE)
                         generic = re.sub(r'^Active\s*:\s*', '', generic, flags=re.IGNORECASE)
                         generic = re.sub(r'^Ingredient\s*:\s*', '', generic, flags=re.IGNORECASE)
-                        return generic.strip()
+                        generic = re.sub(r'^Contains\s*:\s*', '', generic, flags=re.IGNORECASE)
+                        generic = re.sub(r'^Composition\s*:\s*', '', generic, flags=re.IGNORECASE)
+                        
+                        # Take only the first part before any comma or period
+                        generic = re.split(r'[,\.]', generic)[0].strip()
+                        
+                        if generic and len(generic) > 3 and len(generic) < 200:
+                            return generic
             
-            # Try to find generic name in text content with enhanced patterns
+            # Try to find generic name in text content with specific patterns
             text_content = soup.get_text()
+            
+            # Look for patterns like "Generic: Diclofenac Sodium" or "Active: Ibuprofen"
             generic_patterns = [
-                r'Generic[:\s]+([^,\n\r]+)',
-                r'Active[:\s]+([^,\n\r]+)',
-                r'Ingredient[:\s]+([^,\n\r]+)',
-                r'Contains[:\s]+([^,\n\r]+)',
-                r'Composition[:\s]+([^,\n\r]+)',
-                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+\([A-Za-z\s]+\d+[a-z]*\)',  # Pattern like "Diclofenac Sodium (75mg)"
-                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+\d+[a-z]*',  # Pattern like "Diclofenac Sodium 75mg"
+                r'Generic[:\s]+([^,\n\r\.]+)',
+                r'Active[:\s]+([^,\n\r\.]+)',
+                r'Ingredient[:\s]+([^,\n\r\.]+)',
+                r'Contains[:\s]+([^,\n\r\.]+)',
+                r'Composition[:\s]+([^,\n\r\.]+)',
             ]
             
             for pattern in generic_patterns:
                 matches = re.findall(pattern, text_content, re.IGNORECASE)
                 for match in matches:
-                    if match and len(match.strip()) > 3:
+                    if match and len(match.strip()) > 3 and len(match.strip()) < 200:
+                        return match.strip()
+            
+            # Look for chemical compound patterns
+            chemical_patterns = [
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+\([A-Za-z\s]+\d+[a-z]*\)',  # "Diclofenac Sodium (75mg)"
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+\d+[a-z]*',  # "Diclofenac Sodium 75mg"
+                r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)\s+[A-Za-z]+\s+\d+[a-z]*',  # "Diclofenac Sodium USP 75mg"
+            ]
+            
+            for pattern in chemical_patterns:
+                matches = re.findall(pattern, text_content)
+                for match in matches:
+                    if match and len(match.strip()) > 3 and len(match.strip()) < 100:
                         return match.strip()
             
             return None
@@ -645,6 +748,9 @@ class DawaaiScraper:
             # Extract external ID
             external_id = self._extract_external_id(medicine_url)
             
+            # Debug logging to show what we're processing
+            self.logger.debug(f"Processing medicine - URL: {medicine_url}, External ID: {external_id}")
+            
             # Check if medicine already exists
             if self.db_handler.medicine_exists(external_id):
                 self.logger.info(f"Medicine already exists: {external_id}")
@@ -705,7 +811,8 @@ class DawaaiScraper:
                     self.stats['images_downloaded'] += 1
             
             self.stats['new_medicines'] += 1
-            self.logger.info(f"Successfully processed: {external_id}")
+            complete_name = detail_data.get('complete_name', 'Unknown')
+            self.logger.info(f"Successfully processed: {external_id} - {complete_name}")
             
         except Exception as e:
             self.logger.error(f"Error processing medicine {medicine_url}: {e}")
