@@ -202,26 +202,22 @@ class DawaaiScraper:
             return medicine_data
     
     def _extract_listing_page_data(self, container):
-        """Extract basic data from listing page container"""
+        """Extract basic data from listing page container using HTML structure"""
         try:
             data = {}
             
-            # Get all text content from the container
-            container_text = container.get_text(strip=True)
-            self.logger.debug(f"Container text: {container_text}")
-            
-            # Extract brand name - look for text that appears before "Pack Size"
-            brand_name = self._extract_brand_name_from_text(container_text)
+            # Extract brand name using HTML structure
+            brand_name = self._extract_brand_name_from_html(container)
             if brand_name:
                 data['brand_name'] = brand_name
             
-            # Extract pack size - look for "Pack Size:" pattern
-            pack_size = self._extract_pack_size_from_text(container_text)
+            # Extract pack size using HTML structure
+            pack_size = self._extract_pack_size_from_html(container)
             if pack_size:
                 data['pack_size'] = pack_size
             
-            # Extract price information
-            price, original_price = self._extract_price_from_container(container)
+            # Extract price information using HTML structure
+            price, original_price = self._extract_price_from_html(container)
             if price:
                 data['price'] = price
             if original_price:
@@ -711,6 +707,104 @@ class DawaaiScraper:
         except Exception as e:
             self.logger.error(f"Error extracting generic ref link: {e}")
             return None
+    
+    def _extract_brand_name_from_html(self, container):
+        """Extract brand name from HTML structure using consistent pattern"""
+        try:
+            # Look for the card-body div first
+            card_body = container.select_one('.card-body')
+            if not card_body:
+                card_body = container
+            
+            # Find all <p> tags in card-body
+            p_tags = card_body.find_all('p')
+            
+            # The brand name is the first <p> tag that doesn't contain "Pack Size"
+            for p_tag in p_tags:
+                text = p_tag.get_text(strip=True)
+                if text and 'Pack Size:' not in text:
+                    # This should be the brand name
+                    return self._clean_brand_name(text)
+            
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting brand name from HTML: {e}")
+            return None
+    
+    def _extract_pack_size_from_html(self, container):
+        """Extract pack size from HTML structure using consistent pattern"""
+        try:
+            # Look for the card-body div first
+            card_body = container.select_one('.card-body')
+            if not card_body:
+                card_body = container
+            
+            # Find all <p> tags in card-body
+            p_tags = card_body.find_all('p')
+            
+            # The pack size is the <p> tag that contains "Pack Size:"
+            for p_tag in p_tags:
+                text = p_tag.get_text(strip=True)
+                if text and 'Pack Size:' in text:
+                    # Extract the part after "Pack Size:"
+                    pack_size = text.split('Pack Size:', 1)[1].strip()
+                    if pack_size:
+                        return pack_size
+            
+            return None
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting pack size from HTML: {e}")
+            return None
+    
+    def _extract_price_from_html(self, container):
+        """Extract price from HTML structure using consistent pattern"""
+        try:
+            price = None
+            original_price = None
+            
+            # Look for the card-body div first
+            card_body = container.select_one('.card-body')
+            if not card_body:
+                card_body = container
+            
+            # Find the <h4> tag in card-body (contains price information)
+            h4_tag = card_body.find('h4')
+            if h4_tag:
+                # Get the main text (current price)
+                main_text = h4_tag.get_text(strip=True)
+                if 'Rs' in main_text:
+                    # Extract current price from main text
+                    import re
+                    price_match = re.search(r'Rs\s*(\d+(?:,\d+)*)', main_text)
+                    if price_match:
+                        price_str = price_match.group(1).replace(',', '')
+                        try:
+                            price = float(price_str)
+                        except ValueError:
+                            pass
+                
+                # Get the span text (original price)
+                span_tag = h4_tag.find('span')
+                if span_tag:
+                    span_text = span_tag.get_text(strip=True)
+                    if 'Rs' in span_text:
+                        # Extract original price from span text
+                        import re
+                        original_match = re.search(r'Rs\s*(\d+(?:,\d+)*)', span_text)
+                        if original_match:
+                            original_str = original_match.group(1).replace(',', '')
+                            try:
+                                original_price = float(original_str)
+                            except ValueError:
+                                pass
+            
+            return price, original_price
+            
+        except Exception as e:
+            self.logger.error(f"Error extracting price from HTML: {e}")
+            return None, None
     
     def scrape_letter(self, letter):
         """Scrape all medicines for a specific letter"""

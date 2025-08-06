@@ -1,0 +1,772 @@
+2025-08-06 04:15:00,874 - __main__ - INFO - ============================================================
+2025-08-06 04:15:00,874 - __main__ - INFO - PAKISTAN MEDICAL INDUSTRY DRUG DATABASE SCRAPER
+2025-08-06 04:15:00,875 - __main__ - INFO - ============================================================
+2025-08-06 04:15:00,875 - __main__ - INFO - Started at: 2025-08-06 04:15:00.875582
+2025-08-06 04:15:00,875 - __main__ - INFO - Starting to scrape letter: a
+2025-08-06 04:15:00,945 - scraper.dawaai_scraper - INFO - Starting to scrape letter: a
+2025-08-06 04:15:10,869 - scraper.dawaai_scraper - INFO - Found 3586 medicine links via direct search
+2025-08-06 04:15:11,599 - scraper.dawaai_scraper - INFO - Found 1793 unique medicine links on https://dawaai.pk/all-medicines/a
+2025-08-06 04:15:17,392 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 1
+2025-08-06 04:15:18,265 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:15:18,266 - scraper.dawaai_scraper - INFO - Successfully processed: arnil-1-34352 - Arnil 75mg tablet 2x10's
+2025-08-06 04:15:24,539 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 2
+2025-08-06 04:15:26,373 - scraper.image_downloader - INFO - Image downloaded successfully: 2.png
+2025-08-06 04:15:26,379 - scraper.database_handler - INFO - Medicine updated successfully: artifen-34359
+2025-08-06 04:15:26,379 - scraper.dawaai_scraper - INFO - Successfully processed: artifen-34359 - Artifen 50mg tablet 10x10's
+2025-08-06 04:15:31,331 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 3
+2025-08-06 04:15:32,355 - scraper.image_downloader - INFO - Image downloaded successfully: 3.jpg
+2025-08-06 04:15:32,360 - scraper.database_handler - INFO - Medicine updated successfully: advacort-ointment-34383
+2025-08-06 04:15:32,361 - scraper.dawaai_scraper - INFO - Successfully processed: advacort-ointment-34383 - Advacort Ointment 5 g ointment 0.1%
+2025-08-06 04:15:39,762 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 4
+2025-08-06 04:15:40,489 - scraper.image_downloader - INFO - Image downloaded successfully: 4.png
+2025-08-06 04:15:40,498 - scraper.database_handler - INFO - Medicine updated successfully: av-sartan-10-mg-160-mg-34937
+2025-08-06 04:15:40,499 - scraper.dawaai_scraper - INFO - Successfully processed: av-sartan-10-mg-160-mg-34937 - AV-Sartan 10 mg/ 160 mg  tablet 14
+2025-08-06 04:15:47,714 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 5
+2025-08-06 04:15:49,198 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:15:49,200 - scraper.dawaai_scraper - INFO - Successfully processed: aidra-2-35514 - Aidra 20mg tablet 3x10's
+2025-08-06 04:15:55,700 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 6
+2025-08-06 04:15:57,872 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:15:57,873 - scraper.dawaai_scraper - INFO - Successfully processed: acabel-1-35552 - Acabel 4mg tablet 1x10's
+2025-08-06 04:16:02,931 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 7
+2025-08-06 04:16:04,691 - scraper.image_downloader - INFO - Image downloaded successfully: 7.jpg
+2025-08-06 04:16:04,696 - scraper.database_handler - INFO - Medicine updated successfully: acabel-2-35553
+2025-08-06 04:16:04,697 - scraper.dawaai_scraper - INFO - Successfully processed: acabel-2-35553 - Acabel 8mg tablet 1x10's
+2025-08-06 04:16:07,445 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/atcam-35554.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:16:15,929 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 8
+2025-08-06 04:16:17,889 - scraper.image_downloader - INFO - Image downloaded successfully: 8.jpg
+2025-08-06 04:16:17,894 - scraper.database_handler - INFO - Medicine updated successfully: atcam-35554
+2025-08-06 04:16:17,895 - scraper.dawaai_scraper - INFO - Successfully processed: atcam-35554 - Atcam 8mg tablet 10's
+2025-08-06 04:16:24,210 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 9
+2025-08-06 04:16:26,771 - scraper.image_downloader - INFO - Image downloaded successfully: 9.jpg
+2025-08-06 04:16:26,776 - scraper.database_handler - INFO - Medicine updated successfully: apranax-35746
+2025-08-06 04:16:26,777 - scraper.dawaai_scraper - INFO - Successfully processed: apranax-35746 - Apranax 550mg tablet 2x10's
+2025-08-06 04:16:31,256 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 10
+2025-08-06 04:16:32,791 - scraper.image_downloader - INFO - Image downloaded successfully: 10.jpg
+2025-08-06 04:16:32,805 - scraper.database_handler - INFO - Medicine updated successfully: aproxen-1-35751
+2025-08-06 04:16:32,806 - scraper.dawaai_scraper - INFO - Successfully processed: aproxen-1-35751 - Aproxen DS
+2025-08-06 04:16:39,658 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 11
+2025-08-06 04:16:40,486 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:16:40,486 - scraper.dawaai_scraper - INFO - Successfully processed: axicam-35980 - Axicam 20mg capsule 1x20's
+2025-08-06 04:16:46,504 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 12
+2025-08-06 04:16:48,126 - scraper.image_downloader - INFO - Image downloaded successfully: 12.jpg
+2025-08-06 04:16:48,144 - scraper.database_handler - INFO - Medicine updated successfully: adronil-3-mg-3-ml-36366
+2025-08-06 04:16:48,146 - scraper.dawaai_scraper - INFO - Successfully processed: adronil-3-mg-3-ml-36366 - Adronil 3mg/3ml injection 1 Ampx3ml
+2025-08-06 04:16:55,393 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 13
+2025-08-06 04:16:57,246 - scraper.image_downloader - INFO - Image downloaded successfully: 13.jpg
+2025-08-06 04:16:57,252 - scraper.database_handler - INFO - Medicine updated successfully: aurora-tab-5mg-10s-36775
+2025-08-06 04:16:57,252 - scraper.dawaai_scraper - INFO - Successfully processed: aurora-tab-5mg-10s-36775 - Aurora 10mg tablet 1x10's
+2025-08-06 04:17:06,438 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 14
+2025-08-06 04:17:07,415 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:17:07,416 - scraper.dawaai_scraper - INFO - Successfully processed: abriva-400mg-37111 - Abriva 400mg  tablet 28's
+2025-08-06 04:17:13,022 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 15
+2025-08-06 04:17:13,958 - scraper.image_downloader - INFO - Image downloaded successfully: 15.png
+2025-08-06 04:17:13,963 - scraper.database_handler - INFO - Medicine updated successfully: anplag-90mg-37117
+2025-08-06 04:17:13,964 - scraper.dawaai_scraper - INFO - Successfully processed: anplag-90mg-37117 - Anplag 90mg tablet 2x10's
+2025-08-06 04:17:20,270 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 16
+2025-08-06 04:17:21,624 - scraper.image_downloader - INFO - Image downloaded successfully: 16.jpeg
+2025-08-06 04:17:21,629 - scraper.database_handler - INFO - Medicine updated successfully: arixtra-25mg-37175
+2025-08-06 04:17:21,630 - scraper.dawaai_scraper - INFO - Successfully processed: arixtra-25mg-37175 - Arixtra 2.5mg Pre filled Syringe 5ml  injection 0
+2025-08-06 04:17:26,084 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 17
+2025-08-06 04:17:27,921 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:17:27,922 - scraper.dawaai_scraper - INFO - Successfully processed: anvol-10mg-37208 - Anvol 10 mg tablet 1 x 14's
+2025-08-06 04:17:34,636 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 18
+2025-08-06 04:17:36,291 - scraper.image_downloader - INFO - Image downloaded successfully: 18.png
+2025-08-06 04:17:36,296 - scraper.database_handler - INFO - Medicine updated successfully: anvol-25mg-37209
+2025-08-06 04:17:36,296 - scraper.dawaai_scraper - INFO - Successfully processed: anvol-25mg-37209 - Anvol 2.5mg  tablet 1 x 14's
+2025-08-06 04:17:42,753 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 19
+2025-08-06 04:17:44,218 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:17:44,219 - scraper.dawaai_scraper - INFO - Successfully processed: awzi-250mg-37242 - Awzi 250mg capsule 1x10's
+2025-08-06 04:17:48,292 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 20
+2025-08-06 04:17:49,838 - scraper.image_downloader - INFO - Image downloaded successfully: 20.jpg
+2025-08-06 04:17:49,844 - scraper.database_handler - INFO - Medicine updated successfully: amlo-q-5mg-1-37286
+2025-08-06 04:17:49,845 - scraper.dawaai_scraper - INFO - Successfully processed: amlo-q-5mg-1-37286 - Amlo-Q 5mg tablet 2x10's
+2025-08-06 04:17:55,333 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 21
+2025-08-06 04:17:57,963 - scraper.image_downloader - INFO - Image downloaded successfully: 21.png
+2025-08-06 04:17:57,969 - scraper.database_handler - INFO - Medicine updated successfully: adablizer-10mg-37323
+2025-08-06 04:17:57,969 - scraper.dawaai_scraper - INFO - Successfully processed: adablizer-10mg-37323 - Adablizer 10mg tablet 3x10's
+2025-08-06 04:18:04,269 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 22
+2025-08-06 04:18:06,106 - scraper.image_downloader - INFO - Image downloaded successfully: 22.jpg
+2025-08-06 04:18:06,112 - scraper.database_handler - INFO - Medicine updated successfully: acnes-scar-care-37384
+2025-08-06 04:18:06,112 - scraper.dawaai_scraper - INFO - Successfully processed: acnes-scar-care-37384 - Acnes Scar Care  gel 12gm
+2025-08-06 04:18:12,466 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 23
+2025-08-06 04:18:14,913 - scraper.image_downloader - INFO - Image downloaded successfully: 23.jpg
+2025-08-06 04:18:14,919 - scraper.database_handler - INFO - Medicine updated successfully: d-max-aqua-drops-400id-10ml-37531
+2025-08-06 04:18:14,920 - scraper.dawaai_scraper - INFO - Successfully processed: d-max-aqua-drops-400id-10ml-37531 - Aqua D 400IU drops 10ml
+2025-08-06 04:18:20,107 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 24
+2025-08-06 04:18:21,359 - scraper.image_downloader - INFO - Image downloaded successfully: 24.jpg
+2025-08-06 04:18:21,364 - scraper.database_handler - INFO - Medicine updated successfully: ad-folic-od-600mcg-37539
+2025-08-06 04:18:21,365 - scraper.dawaai_scraper - INFO - Successfully processed: ad-folic-od-600mcg-37539 - AD Folic 600mcg 600mcg tablet 3x10's
+2025-08-06 04:18:27,200 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 25
+2025-08-06 04:18:29,179 - scraper.image_downloader - INFO - Image downloaded successfully: 25.png
+2025-08-06 04:18:29,184 - scraper.database_handler - INFO - Medicine updated successfully: adapco-forte-gel-3mg-37615
+2025-08-06 04:18:29,185 - scraper.dawaai_scraper - INFO - Successfully processed: adapco-forte-gel-3mg-37615 - Adapco Forte Gel 3mg gel 15gm
+2025-08-06 04:18:34,160 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 26
+2025-08-06 04:18:35,282 - scraper.image_downloader - INFO - Image downloaded successfully: 26.jpeg
+2025-08-06 04:18:35,287 - scraper.database_handler - INFO - Medicine updated successfully: apizyt-120-ml-syrup-37971
+2025-08-06 04:18:35,288 - scraper.dawaai_scraper - INFO - Successfully processed: apizyt-120-ml-syrup-37971 - Apizyt 120 ml syrup  syrup 120ml
+2025-08-06 04:18:39,433 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 27
+2025-08-06 04:18:41,448 - scraper.image_downloader - INFO - Image downloaded successfully: 27.png
+2025-08-06 04:18:41,463 - scraper.database_handler - INFO - Medicine updated successfully: aquavit-sachet-37987
+2025-08-06 04:18:41,463 - scraper.dawaai_scraper - INFO - Successfully processed: aquavit-sachet-37987 - Aquavit  sachet 10
+2025-08-06 04:18:46,720 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 28
+2025-08-06 04:18:49,334 - scraper.image_downloader - INFO - Image downloaded successfully: 28.png
+2025-08-06 04:18:49,339 - scraper.database_handler - INFO - Medicine updated successfully: alcuflex-550mg-37997
+2025-08-06 04:18:49,340 - scraper.dawaai_scraper - INFO - Successfully processed: alcuflex-550mg-37997 - Alcuflex 550mg  tablet 20's
+2025-08-06 04:18:55,436 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 29
+2025-08-06 04:18:58,306 - scraper.image_downloader - INFO - Image downloaded successfully: 29.jpg
+2025-08-06 04:18:58,312 - scraper.database_handler - INFO - Medicine updated successfully: amorin-50-mg-38009
+2025-08-06 04:18:58,313 - scraper.dawaai_scraper - INFO - Successfully processed: amorin-50-mg-38009 - Amorin 50mg Tab.— Dawaai - Uses, Side Effect, Price In Pakistan
+2025-08-06 04:19:07,165 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 30
+2025-08-06 04:19:09,417 - scraper.image_downloader - INFO - Image downloaded successfully: 30.jpg
+2025-08-06 04:19:09,422 - scraper.database_handler - INFO - Medicine updated successfully: actifed-dm-38019
+2025-08-06 04:19:09,422 - scraper.dawaai_scraper - INFO - Successfully processed: actifed-dm-38019 - Actifed-DM 1.25mg/30mg/10mg syrup 90ml
+2025-08-06 04:19:16,048 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 31
+2025-08-06 04:19:18,075 - scraper.image_downloader - INFO - Image downloaded successfully: 31.jpg
+2025-08-06 04:19:18,083 - scraper.database_handler - INFO - Medicine updated successfully: avsar-580-mg-tablet-38133
+2025-08-06 04:19:18,084 - scraper.dawaai_scraper - INFO - Successfully processed: avsar-580-mg-tablet-38133 - Avsar 5mg/160mg tablet 2x7's
+2025-08-06 04:19:24,176 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 32
+2025-08-06 04:19:25,323 - scraper.image_downloader - INFO - Image downloaded successfully: 32.jpg
+2025-08-06 04:19:25,328 - scraper.database_handler - INFO - Medicine updated successfully: ampress-10mg-tablet-38134
+2025-08-06 04:19:25,328 - scraper.dawaai_scraper - INFO - Successfully processed: ampress-10mg-tablet-38134 - Ampress 10mg Tablet  tablet 20
+2025-08-06 04:19:28,724 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/aminovel-600mg-injection-38150.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:19:34,922 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 33
+2025-08-06 04:19:36,381 - scraper.image_downloader - INFO - Image downloaded successfully: 33.jpg
+2025-08-06 04:19:36,386 - scraper.database_handler - INFO - Medicine updated successfully: aminovel-600mg-injection-38150
+2025-08-06 04:19:36,387 - scraper.dawaai_scraper - INFO - Successfully processed: aminovel-600mg-injection-38150 - Aminovel 600mg Injection  injection 500ml
+2025-08-06 04:19:40,250 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 34
+2025-08-06 04:19:40,902 - scraper.image_downloader - INFO - Image downloaded successfully: 34.jpg
+2025-08-06 04:19:40,907 - scraper.database_handler - INFO - Medicine updated successfully: atenolol-100mg-1-38158
+2025-08-06 04:19:40,907 - scraper.dawaai_scraper - INFO - Successfully processed: atenolol-100mg-1-38158 - Atenolol 100mg  tablet 2x10's
+2025-08-06 04:19:45,883 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 35
+2025-08-06 04:19:48,534 - scraper.image_downloader - INFO - Image downloaded successfully: 35.png
+2025-08-06 04:19:48,540 - scraper.database_handler - INFO - Medicine updated successfully: alzilo-05mg-38159
+2025-08-06 04:19:48,540 - scraper.dawaai_scraper - INFO - Successfully processed: alzilo-05mg-38159 - Alzilo 0.5mg tablet 1x10's
+2025-08-06 04:19:53,366 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 36
+2025-08-06 04:19:56,525 - scraper.image_downloader - INFO - Image downloaded successfully: 36.png
+2025-08-06 04:19:56,530 - scraper.database_handler - INFO - Medicine updated successfully: amgydex-eye-drop-38204
+2025-08-06 04:19:56,531 - scraper.dawaai_scraper - INFO - Successfully processed: amgydex-eye-drop-38204 - Amgydex Eye Drop 5ml  drops
+2025-08-06 04:20:00,921 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 37
+2025-08-06 04:20:02,880 - scraper.image_downloader - INFO - Image downloaded successfully: 37.png
+2025-08-06 04:20:02,886 - scraper.database_handler - INFO - Medicine updated successfully: actiflor-38224
+2025-08-06 04:20:02,886 - scraper.dawaai_scraper - INFO - Successfully processed: actiflor-38224 - Actiflor 250mg sachet 1x10's
+2025-08-06 04:20:06,585 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 38
+2025-08-06 04:20:07,384 - scraper.image_downloader - INFO - Image downloaded successfully: 38.jpg
+2025-08-06 04:20:07,390 - scraper.database_handler - INFO - Medicine updated successfully: ampiclox-drop-90mg-38281
+2025-08-06 04:20:07,390 - scraper.dawaai_scraper - INFO - Successfully processed: ampiclox-drop-90mg-38281 - Ampiclox Drop 90mg 90mg drops 20ml
+2025-08-06 04:20:13,166 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 39
+2025-08-06 04:20:14,443 - scraper.image_downloader - INFO - Image downloaded successfully: 39.jpg
+2025-08-06 04:20:14,448 - scraper.database_handler - INFO - Medicine updated successfully: awardin-plus-50mg-1-38310
+2025-08-06 04:20:14,449 - scraper.dawaai_scraper - INFO - Successfully processed: awardin-plus-50mg-1-38310 - Awardin Plus 50mg capsule 2 x 10's
+2025-08-06 04:20:23,664 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 40
+2025-08-06 04:20:24,641 - scraper.image_downloader - INFO - Image downloaded successfully: 40.jpeg
+2025-08-06 04:20:24,646 - scraper.database_handler - INFO - Medicine updated successfully: kobec-38349
+2025-08-06 04:20:24,647 - scraper.dawaai_scraper - INFO - Successfully processed: kobec-38349 - Amgy  solution 5ml
+2025-08-06 04:20:28,729 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 41
+2025-08-06 04:20:30,718 - scraper.image_downloader - INFO - Image downloaded successfully: 41.jpg
+2025-08-06 04:20:30,723 - scraper.database_handler - INFO - Medicine updated successfully: amlocard-10-38350
+2025-08-06 04:20:30,724 - scraper.dawaai_scraper - INFO - Successfully processed: amlocard-10-38350 - Amlocard 10  tablet 2 x 10's
+2025-08-06 04:20:35,820 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 42
+2025-08-06 04:20:37,658 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:20:37,659 - scraper.dawaai_scraper - INFO - Successfully processed: a2a-3-38381 - A2A 25mg tablet 2 x 10's
+2025-08-06 04:20:42,612 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 43
+2025-08-06 04:20:44,848 - scraper.image_downloader - INFO - Image downloaded successfully: 43.png
+2025-08-06 04:20:44,853 - scraper.database_handler - INFO - Medicine updated successfully: amlocard-5-38409
+2025-08-06 04:20:44,854 - scraper.dawaai_scraper - INFO - Successfully processed: amlocard-5-38409 - Amlocard 5 5mg tablet 2 x 10's
+2025-08-06 04:20:48,918 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 44
+2025-08-06 04:20:49,662 - scraper.image_downloader - INFO - Image downloaded successfully: 44.jpg
+2025-08-06 04:20:49,667 - scraper.database_handler - INFO - Medicine updated successfully: amclav-14-38579
+2025-08-06 04:20:49,668 - scraper.dawaai_scraper - INFO - Successfully processed: amclav-14-38579 - Amclav 62.5mg / ml drops 20 ml
+2025-08-06 04:20:57,255 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 45
+2025-08-06 04:20:58,269 - scraper.image_downloader - INFO - Image downloaded successfully: 45.jpg
+2025-08-06 04:20:58,283 - scraper.database_handler - INFO - Medicine updated successfully: acetra-1-39031
+2025-08-06 04:20:58,284 - scraper.dawaai_scraper - INFO - Successfully processed: acetra-1-39031 - Acetra 37.5mg/325mg tablet 1 x 10's
+2025-08-06 04:21:03,489 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 46
+2025-08-06 04:21:04,930 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:21:04,931 - scraper.dawaai_scraper - INFO - Successfully processed: angiwell-40126 - Angiwell 1000mg tablet 2 x 7's
+2025-08-06 04:21:09,977 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 47
+2025-08-06 04:21:12,558 - scraper.image_downloader - INFO - Image downloaded successfully: 47.png
+2025-08-06 04:21:12,573 - scraper.database_handler - INFO - Medicine updated successfully: acicon-1-41126
+2025-08-06 04:21:12,574 - scraper.dawaai_scraper - INFO - Successfully processed: acicon-1-41126 - Acicon 40 mg tablet 1x10
+2025-08-06 04:21:19,177 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 48
+2025-08-06 04:21:21,440 - scraper.image_downloader - INFO - Image downloaded successfully: 48.jpg
+2025-08-06 04:21:21,448 - scraper.database_handler - INFO - Medicine updated successfully: am-telsan-41171
+2025-08-06 04:21:21,449 - scraper.dawaai_scraper - INFO - Successfully processed: am-telsan-41171 - AM-Telsan 5mg/40mg tablet 2x7's
+2025-08-06 04:21:26,155 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 49
+2025-08-06 04:21:27,388 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:21:27,389 - scraper.dawaai_scraper - INFO - Successfully processed: aminophylline-42702 - Aminophylline 250 mg injection 50 ampx10 ml
+2025-08-06 04:21:33,395 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 50
+2025-08-06 04:21:35,251 - scraper.image_downloader - INFO - Image downloaded successfully: 50.png
+2025-08-06 04:21:35,257 - scraper.database_handler - INFO - Medicine updated successfully: agolix-42736
+2025-08-06 04:21:35,258 - scraper.dawaai_scraper - INFO - Successfully processed: agolix-42736 - Agolix 100 mg / 5 ml syrup 60 ml
+2025-08-06 04:21:41,984 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 51
+2025-08-06 04:21:43,886 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:21:43,887 - scraper.dawaai_scraper - INFO - Successfully processed: agolix-1-42737 - Agolix 400 mg tablet 1 x 10's
+2025-08-06 04:21:50,468 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 52
+2025-08-06 04:21:52,818 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:21:52,818 - scraper.dawaai_scraper - INFO - Successfully processed: aireez-2-42758 - Aireez 4 mg tablet 14's
+2025-08-06 04:21:58,330 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 53
+2025-08-06 04:21:59,876 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:21:59,877 - scraper.dawaai_scraper - INFO - Successfully processed: amisped-2-42774 - Amisped 5 mg tablet 14's
+2025-08-06 04:22:06,092 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 54
+2025-08-06 04:22:07,880 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:22:07,881 - scraper.dawaai_scraper - INFO - Successfully processed: asthiven-42785 - Asthiven 4 mg powder 14 sachet
+2025-08-06 04:22:16,389 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 55
+2025-08-06 04:22:17,695 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:22:17,696 - scraper.dawaai_scraper - INFO - Successfully processed: asthiven-2-42787 - Asthiven 5 mg tablet 14's
+2025-08-06 04:22:23,114 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 56
+2025-08-06 04:22:25,485 - scraper.image_downloader - INFO - Image downloaded successfully: 56.jpg
+2025-08-06 04:22:25,491 - scraper.database_handler - INFO - Medicine updated successfully: avsar-plus-43512
+2025-08-06 04:22:25,491 - scraper.dawaai_scraper - INFO - Successfully processed: avsar-plus-43512 - Avsar Plus 5 mg / 12.5 mg / 160 mg tablet 4 x 7's
+2025-08-06 04:22:33,236 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 57
+2025-08-06 04:22:35,820 - scraper.image_downloader - INFO - Image downloaded successfully: 57.png
+2025-08-06 04:22:35,826 - scraper.database_handler - INFO - Medicine updated successfully: am-telsan-10mg40mg-43541
+2025-08-06 04:22:35,827 - scraper.dawaai_scraper - INFO - Successfully processed: am-telsan-10mg40mg-43541 - Am-Telsan 10mg/40mg tablet 2x7's
+2025-08-06 04:22:43,432 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 58
+2025-08-06 04:22:44,794 - scraper.image_downloader - INFO - Image downloaded successfully: 58.jpg
+2025-08-06 04:22:44,799 - scraper.database_handler - INFO - Medicine updated successfully: advacort-01-10g-43542
+2025-08-06 04:22:44,800 - scraper.dawaai_scraper - INFO - Successfully processed: advacort-01-10g-43542 - Advacort 0.1% 10g  cream 10gm
+2025-08-06 04:22:50,567 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 59
+2025-08-06 04:22:52,441 - scraper.image_downloader - INFO - Image downloaded successfully: 59.jpeg
+2025-08-06 04:22:52,446 - scraper.database_handler - INFO - Medicine updated successfully: avsar-plus-16010125mg-43564
+2025-08-06 04:22:52,446 - scraper.dawaai_scraper - INFO - Successfully processed: avsar-plus-16010125mg-43564 - Avsar Plus  160/10/12.5mg tablet 4x7's
+2025-08-06 04:22:56,728 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 60
+2025-08-06 04:22:58,325 - scraper.image_downloader - INFO - Image downloaded successfully: 60.jpg
+2025-08-06 04:22:58,330 - scraper.database_handler - INFO - Medicine updated successfully: amoxil-500mg-100s-43573
+2025-08-06 04:22:58,331 - scraper.dawaai_scraper - INFO - Successfully processed: amoxil-500mg-100s-43573 - Amoxil 500mg capsule 5x20's
+2025-08-06 04:23:05,391 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 61
+2025-08-06 04:23:05,993 - scraper.image_downloader - INFO - Image downloaded successfully: 61.jpg
+2025-08-06 04:23:05,998 - scraper.database_handler - INFO - Medicine updated successfully: atorva-43801
+2025-08-06 04:23:05,998 - scraper.dawaai_scraper - INFO - Successfully processed: atorva-43801 - Atorva 40mg tablet 10
+2025-08-06 04:23:09,904 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/aurora-44165.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:23:18,631 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 62
+2025-08-06 04:23:20,546 - scraper.image_downloader - INFO - Image downloaded successfully: 62.jpg
+2025-08-06 04:23:20,551 - scraper.database_handler - INFO - Medicine updated successfully: aurora-44165
+2025-08-06 04:23:20,552 - scraper.dawaai_scraper - INFO - Successfully processed: aurora-44165 - Aurora 20mg tablet 1x10's
+2025-08-06 04:23:23,150 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/arynoin-plus-gel-10g-44188.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:23:29,404 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 63
+2025-08-06 04:23:31,424 - scraper.image_downloader - INFO - Image downloaded successfully: 63.png
+2025-08-06 04:23:31,429 - scraper.database_handler - INFO - Medicine updated successfully: arynoin-plus-gel-10g-44188
+2025-08-06 04:23:31,430 - scraper.dawaai_scraper - INFO - Successfully processed: arynoin-plus-gel-10g-44188 - Arynoin-Plus Gel 10g  gel 10 gm
+2025-08-06 04:23:35,161 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 64
+2025-08-06 04:23:37,262 - scraper.image_downloader - INFO - Image downloaded successfully: 64.jpeg
+2025-08-06 04:23:37,268 - scraper.database_handler - INFO - Medicine updated successfully: amico-m-sugar-free-120ml-44209
+2025-08-06 04:23:37,269 - scraper.dawaai_scraper - INFO - Successfully processed: amico-m-sugar-free-120ml-44209 - Amico-M Sugar Free  syrup 120ml
+2025-08-06 04:23:44,239 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 65
+2025-08-06 04:23:46,145 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:23:46,145 - scraper.dawaai_scraper - INFO - Successfully processed: atmos-20mg-1-44246 - Atmos 20mg tablet 1x10's
+2025-08-06 04:23:53,073 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 66
+2025-08-06 04:23:54,785 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:23:54,787 - scraper.dawaai_scraper - INFO - Successfully processed: amity-suspension-125mg-44262 - Amity 125mg suspension 60ml
+2025-08-06 04:24:03,364 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 67
+2025-08-06 04:24:04,741 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:24:04,741 - scraper.dawaai_scraper - INFO - Successfully processed: amity-suspension-250mg-44264 - Amity 250mg suspension 60ml
+2025-08-06 04:24:10,957 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 68
+2025-08-06 04:24:12,712 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:24:12,713 - scraper.dawaai_scraper - INFO - Successfully processed: amity-tablets-250mg-44265 - Amity 250mg tablet 1x10's
+2025-08-06 04:24:23,902 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 69
+2025-08-06 04:24:24,684 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:24:24,685 - scraper.dawaai_scraper - INFO - Successfully processed: amity-tablets-500mg-44267 - Amity 500mg tablet 1x10's
+2025-08-06 04:24:28,382 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/advance-44277.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:24:35,453 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 70
+2025-08-06 04:24:37,634 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:24:37,635 - scraper.dawaai_scraper - INFO - Successfully processed: advance-44277 - Advance 20mg capsule 1x10's
+2025-08-06 04:24:44,675 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 71
+2025-08-06 04:24:45,950 - scraper.image_downloader - INFO - Image downloaded successfully: 71.jpg
+2025-08-06 04:24:45,956 - scraper.database_handler - INFO - Medicine updated successfully: amak-44345
+2025-08-06 04:24:45,957 - scraper.dawaai_scraper - INFO - Successfully processed: amak-44345 - Amak 50 mg/1 ml injection 5's
+2025-08-06 04:24:52,083 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 72
+2025-08-06 04:24:53,841 - scraper.image_downloader - INFO - Image downloaded successfully: 72.jpg
+2025-08-06 04:24:53,847 - scraper.database_handler - INFO - Medicine updated successfully: amak-1-44346
+2025-08-06 04:24:53,847 - scraper.dawaai_scraper - INFO - Successfully processed: amak-1-44346 - Amak 100 mg/ 2 ml injection 5's
+2025-08-06 04:24:59,471 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 73
+2025-08-06 04:25:02,288 - scraper.image_downloader - INFO - Image downloaded successfully: 73.jpg
+2025-08-06 04:25:02,293 - scraper.database_handler - INFO - Medicine updated successfully: amak-3-44348
+2025-08-06 04:25:02,294 - scraper.dawaai_scraper - INFO - Successfully processed: amak-3-44348 - Amak 500 mg/2 ml injection 1's
+2025-08-06 04:25:09,553 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 74
+2025-08-06 04:25:10,762 - scraper.image_downloader - INFO - Image downloaded successfully: 74.jpg
+2025-08-06 04:25:10,769 - scraper.database_handler - INFO - Medicine updated successfully: avsar-plus-1-44902
+2025-08-06 04:25:10,770 - scraper.dawaai_scraper - INFO - Successfully processed: avsar-plus-1-44902 - Avsar Plus 10mg/160mg/25mg tablet 4x7's
+2025-08-06 04:25:17,836 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 75
+2025-08-06 04:25:18,408 - scraper.image_downloader - INFO - Image downloaded successfully: 75.jpg
+2025-08-06 04:25:18,413 - scraper.database_handler - INFO - Medicine updated successfully: atem-2-44979
+2025-08-06 04:25:18,414 - scraper.dawaai_scraper - INFO - Successfully processed: atem-2-44979 - Atem 0.025% nebulizer solution 2x5's 2ml
+2025-08-06 04:25:23,345 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 76
+2025-08-06 04:25:24,368 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:25:24,369 - scraper.dawaai_scraper - INFO - Successfully processed: adablizer-1-45010 - Adablizer 15mg tablet 3x10's
+2025-08-06 04:25:31,020 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 77
+2025-08-06 04:25:32,282 - scraper.image_downloader - INFO - Image downloaded successfully: 77.png
+2025-08-06 04:25:32,291 - scraper.database_handler - INFO - Medicine updated successfully: adapco-2-45041
+2025-08-06 04:25:32,292 - scraper.dawaai_scraper - INFO - Successfully processed: adapco-2-45041 - Adapco 0.1% gel 15gm
+2025-08-06 04:25:40,411 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 78
+2025-08-06 04:25:44,216 - scraper.image_downloader - INFO - Image downloaded successfully: 78.png
+2025-08-06 04:25:44,223 - scraper.database_handler - INFO - Medicine updated successfully: avodart-45093
+2025-08-06 04:25:44,223 - scraper.dawaai_scraper - INFO - Successfully processed: avodart-45093 - Avodart 0.5mg capsule 3x10's
+2025-08-06 04:25:51,561 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 79
+2025-08-06 04:25:53,553 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:25:53,554 - scraper.dawaai_scraper - INFO - Successfully processed: all-purpose-nipple-ointment-apno-45244 - All Purpose Nipple Ointment (APNO) 0.1%/2%/2%
+2025-08-06 04:26:00,574 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 80
+2025-08-06 04:26:02,653 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:26:02,653 - scraper.dawaai_scraper - INFO - Successfully processed: amodip-6-45743 - Amodip 10mg tablet 3x10's
+2025-08-06 04:26:07,446 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 81
+2025-08-06 04:26:08,432 - scraper.image_downloader - INFO - Image downloaded successfully: 81.jpg
+2025-08-06 04:26:08,438 - scraper.database_handler - INFO - Medicine updated successfully: amoxi-clav-17-45908
+2025-08-06 04:26:08,439 - scraper.dawaai_scraper - INFO - Successfully processed: amoxi-clav-17-45908 - Amoxi-Clav 375mg tablet 2x3's
+2025-08-06 04:26:16,042 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 82
+2025-08-06 04:26:16,883 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:26:16,883 - scraper.dawaai_scraper - INFO - Successfully processed: azocam-3-45972 - Azocam 250mg capsule 2x5's
+2025-08-06 04:26:23,773 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 83
+2025-08-06 04:26:25,497 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:26:25,498 - scraper.dawaai_scraper - INFO - Successfully processed: aireez-5-45973 - Aireez   10mg tablet 3x10's
+2025-08-06 04:26:33,778 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 84
+2025-08-06 04:26:35,295 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:26:35,296 - scraper.dawaai_scraper - INFO - Successfully processed: am-descol-46301 - Am-Descol 10/10mg tablets 2x7's
+2025-08-06 04:26:42,100 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 85
+2025-08-06 04:26:43,306 - scraper.image_downloader - INFO - Image downloaded successfully: 85.jpg
+2025-08-06 04:26:43,317 - scraper.database_handler - INFO - Medicine updated successfully: amodip-v-46379
+2025-08-06 04:26:43,318 - scraper.dawaai_scraper - INFO - Successfully processed: amodip-v-46379 - Amodip-V 5mg/80mg tablet 2x7's
+2025-08-06 04:26:47,984 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 86
+2025-08-06 04:26:50,229 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:26:50,229 - scraper.dawaai_scraper - INFO - Successfully processed: aireez-6-46394 - Aireez 5mg tablets 3x10's
+2025-08-06 04:26:56,683 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 87
+2025-08-06 04:26:59,061 - scraper.image_downloader - INFO - Image downloaded successfully: 87.png
+2025-08-06 04:26:59,066 - scraper.database_handler - INFO - Medicine updated successfully: aproxen-2-46414
+2025-08-06 04:26:59,067 - scraper.dawaai_scraper - INFO - Successfully processed: aproxen-2-46414 - Aproxen 275mg tablet 3x10s
+2025-08-06 04:27:05,640 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 88
+2025-08-06 04:27:07,732 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:27:07,733 - scraper.dawaai_scraper - INFO - Successfully processed: asthiven-3-46420 - Asthiven 10mg tablet 1x14's
+2025-08-06 04:27:13,593 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 89
+2025-08-06 04:27:14,913 - scraper.image_downloader - INFO - Image downloaded successfully: 89.png
+2025-08-06 04:27:14,917 - scraper.database_handler - INFO - Medicine updated successfully: alfa-d-46431
+2025-08-06 04:27:14,918 - scraper.dawaai_scraper - INFO - Successfully processed: alfa-d-46431 - Alfa-D   1mcg tablet 1x10's
+2025-08-06 04:27:21,758 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 90
+2025-08-06 04:27:23,827 - scraper.image_downloader - INFO - Image downloaded successfully: 90.jpg
+2025-08-06 04:27:23,832 - scraper.database_handler - INFO - Medicine updated successfully: abri-flex-adult-pull-up-extra-large-46469
+2025-08-06 04:27:23,833 - scraper.dawaai_scraper - INFO - Successfully processed: abri-flex-adult-pull-up-extra-large-46469 - Abri Flex Adult Pull-up - Extra Large  diapers 14 Pcs.
+2025-08-06 04:27:29,501 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 91
+2025-08-06 04:27:30,111 - scraper.image_downloader - INFO - Image downloaded successfully: 91.jpeg
+2025-08-06 04:27:30,117 - scraper.database_handler - INFO - Medicine updated successfully: amodip-7-46504
+2025-08-06 04:27:30,117 - scraper.dawaai_scraper - INFO - Successfully processed: amodip-7-46504 - Amodip. 5mg tablet 3x10's
+2025-08-06 04:27:36,079 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 92
+2025-08-06 04:27:37,359 - scraper.image_downloader - INFO - Image downloaded successfully: 92.jpg
+2025-08-06 04:27:37,364 - scraper.database_handler - INFO - Medicine updated successfully: agnar-1-46510
+2025-08-06 04:27:37,365 - scraper.dawaai_scraper - INFO - Successfully processed: agnar-1-46510 - Agnar   400 IU /90 mcg /500 mg tablet 3 x 10's
+2025-08-06 04:27:44,702 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 93
+2025-08-06 04:27:48,148 - scraper.image_downloader - INFO - Image downloaded successfully: 93.png
+2025-08-06 04:27:48,153 - scraper.database_handler - INFO - Medicine updated successfully: -46563
+2025-08-06 04:27:48,154 - scraper.dawaai_scraper - INFO - Successfully processed: -46563 - Aquazole  cream 20 gm
+2025-08-06 04:27:55,159 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 94
+2025-08-06 04:27:57,704 - scraper.image_downloader - INFO - Image downloaded successfully: 94.png
+2025-08-06 04:27:57,711 - scraper.database_handler - INFO - Medicine updated successfully: -46564
+2025-08-06 04:27:57,712 - scraper.dawaai_scraper - INFO - Successfully processed: -46564 - Altin-Met  1000 mg / 50 mg tablet 2 x 7's
+2025-08-06 04:28:03,917 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 95
+2025-08-06 04:28:05,915 - scraper.image_downloader - INFO - Image downloaded successfully: 95.jpg
+2025-08-06 04:28:05,920 - scraper.database_handler - INFO - Medicine updated successfully: -46703
+2025-08-06 04:28:05,921 - scraper.dawaai_scraper - INFO - Successfully processed: -46703 - Am-Telsan 5/80 mg tablet 2 x 7's
+2025-08-06 04:28:11,225 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 96
+2025-08-06 04:28:13,224 - scraper.image_downloader - INFO - Image downloaded successfully: 96.jpg
+2025-08-06 04:28:13,229 - scraper.database_handler - INFO - Medicine updated successfully: -46710
+2025-08-06 04:28:13,230 - scraper.dawaai_scraper - INFO - Successfully processed: -46710 - Amoxi-Clav  tablet 3 x 2's
+2025-08-06 04:28:19,200 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 97
+2025-08-06 04:28:20,492 - scraper.image_downloader - INFO - Image downloaded successfully: 97.jpg
+2025-08-06 04:28:20,497 - scraper.database_handler - INFO - Medicine updated successfully: -46877
+2025-08-06 04:28:20,498 - scraper.dawaai_scraper - INFO - Successfully processed: -46877 - Aripan 20 mg tablet 3 x 10's
+2025-08-06 04:28:25,337 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 98
+2025-08-06 04:28:27,434 - scraper.image_downloader - INFO - Image downloaded successfully: 98.jpg
+2025-08-06 04:28:27,439 - scraper.database_handler - INFO - Medicine updated successfully: -47027
+2025-08-06 04:28:27,440 - scraper.dawaai_scraper - INFO - Successfully processed: -47027 - Aceclocare 100 mg tablet 1 x 10's
+2025-08-06 04:28:33,560 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 99
+2025-08-06 04:28:35,298 - scraper.image_downloader - INFO - Image downloaded successfully: 99.jpg
+2025-08-06 04:28:35,303 - scraper.database_handler - INFO - Medicine updated successfully: -47280
+2025-08-06 04:28:35,304 - scraper.dawaai_scraper - INFO - Successfully processed: -47280 - Acuron 10 mg injection iv 5 Amp x 5 ml
+2025-08-06 04:28:38,409 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 100
+2025-08-06 04:28:39,098 - scraper.image_downloader - INFO - Image downloaded successfully: 100.jpg
+2025-08-06 04:28:39,103 - scraper.database_handler - INFO - Medicine updated successfully: apitent-syrup-120-ml-bottle-47452
+2025-08-06 04:28:39,104 - scraper.dawaai_scraper - INFO - Successfully processed: apitent-syrup-120-ml-bottle-47452 - Apitent  syrup 120 ml
+2025-08-06 04:28:43,481 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 101
+2025-08-06 04:28:45,022 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:28:45,023 - scraper.dawaai_scraper - INFO - Successfully processed: avaam-5-160-mg-tablets-2-x-7s-pack-47453 - Avaam 5 mg / 160 mg tablet 2 x 7's
+2025-08-06 04:28:50,910 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 102
+2025-08-06 04:28:52,406 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:28:52,406 - scraper.dawaai_scraper - INFO - Successfully processed: alkeris-sr-200-mg-tablets-3-x-10s-pack-47657 - Alkeris-SR 200 mg tablets 3 x 10's
+2025-08-06 04:28:59,688 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 103
+2025-08-06 04:29:01,264 - scraper.image_downloader - INFO - Image downloaded successfully: 103.jpg
+2025-08-06 04:29:01,270 - scraper.database_handler - INFO - Medicine updated successfully: a-glip-50-mg-tablets-1-x-14s-pack-47773
+2025-08-06 04:29:01,270 - scraper.dawaai_scraper - INFO - Successfully processed: a-glip-50-mg-tablets-1-x-14s-pack-47773 - A-Glip 50 mg tablets 1 x 14's
+2025-08-06 04:29:05,454 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 104
+2025-08-06 04:29:07,845 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:07,846 - scraper.dawaai_scraper - INFO - Successfully processed: acukat-drops-5-ml-pack-47779 - Acukat   drops 5 ml
+2025-08-06 04:29:13,104 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 105
+2025-08-06 04:29:13,817 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:13,817 - scraper.dawaai_scraper - INFO - Successfully processed: azineu-250-mg-tablets-1-x-6s-pack-47837 - Azineu 250 mg tablets 1 x 6's
+2025-08-06 04:29:18,842 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 106
+2025-08-06 04:29:19,583 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:19,583 - scraper.dawaai_scraper - INFO - Successfully processed: am-telsan-10-mg-80-mg-tablets-2-x-7s-pack-47841 - Am-Telsan  10 mg / 80 mg tablets 2 x 7's
+2025-08-06 04:29:26,240 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 107
+2025-08-06 04:29:27,522 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:27,523 - scraper.dawaai_scraper - INFO - Successfully processed: artem-plus-30-mg-180-mg-dry-suspention-30-ml-pack-47843 - Artem Plus  30 mg / 180 mg dry suspension 30 ml
+2025-08-06 04:29:35,243 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 108
+2025-08-06 04:29:35,940 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:35,941 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-m-5-mg-500-mg-tablets-2-x-7s-pack-47885 - Adrance-M 5 mg / 500 mg  tablets 2 x 7's
+2025-08-06 04:29:41,078 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 109
+2025-08-06 04:29:42,973 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:29:42,973 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-m-5-mg-850-mg-tablets-2-x-7s-pack-47886 - Adrance-M 5 mg / 850 mg tablets 2 x 7's
+2025-08-06 04:29:50,712 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 110
+2025-08-06 04:29:52,389 - scraper.image_downloader - INFO - Image downloaded successfully: 110.jpg
+2025-08-06 04:29:52,394 - scraper.database_handler - INFO - Medicine updated successfully: adrance-m-125-mg-500-mg-tablets-2-x-7s-pack-47887
+2025-08-06 04:29:52,395 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-m-125-mg-500-mg-tablets-2-x-7s-pack-47887 - Adrance-M 12.5 mg / 500 mg tablets 2 x 7's
+2025-08-06 04:29:55,268 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/adrance-m-125-mg-850-mg-tablets-2-x-7s-pack-47888.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:30:02,915 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 111
+2025-08-06 04:30:04,173 - scraper.image_downloader - INFO - Image downloaded successfully: 111.jpg
+2025-08-06 04:30:04,176 - scraper.database_handler - INFO - Medicine updated successfully: adrance-m-125-mg-850-mg-tablets-2-x-7s-pack-47888
+2025-08-06 04:30:04,177 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-m-125-mg-850-mg-tablets-2-x-7s-pack-47888 - Adrance-M 12.5 mg / 850 mg tablets 2 x 7's
+2025-08-06 04:30:08,795 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 112
+2025-08-06 04:30:09,812 - scraper.image_downloader - INFO - Image downloaded successfully: 112.png
+2025-08-06 04:30:09,818 - scraper.database_handler - INFO - Medicine updated successfully: adrance-m-125-mg-1000-mg-tablets-2-x-7s-pack-47889
+2025-08-06 04:30:09,818 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-m-125-mg-1000-mg-tablets-2-x-7s-pack-47889 - Adrance-M 12.5 mg / 1000 mg tablets 2 x 7's
+2025-08-06 04:30:14,788 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 113
+2025-08-06 04:30:17,107 - scraper.image_downloader - INFO - Image downloaded successfully: 113.jpg
+2025-08-06 04:30:17,112 - scraper.database_handler - INFO - Medicine updated successfully: amsart-10-mg-160-mg-tablets-1-x-14s-pack-47932
+2025-08-06 04:30:17,113 - scraper.dawaai_scraper - INFO - Successfully processed: amsart-10-mg-160-mg-tablets-1-x-14s-pack-47932 - Amsart 10 mg / 160 mg tablets 1 x 14's
+2025-08-06 04:30:22,688 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 114
+2025-08-06 04:30:24,851 - scraper.image_downloader - INFO - Image downloaded successfully: 114.png
+2025-08-06 04:30:24,856 - scraper.database_handler - INFO - Medicine updated successfully: amsart-5-mg-80-mg-tablets-1-x-14s-pack-47933
+2025-08-06 04:30:24,857 - scraper.dawaai_scraper - INFO - Successfully processed: amsart-5-mg-80-mg-tablets-1-x-14s-pack-47933 - Amsart 5 mg / 80 mg tablets 1 x 14's
+2025-08-06 04:30:29,498 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 115
+2025-08-06 04:30:31,502 - scraper.image_downloader - INFO - Image downloaded successfully: 115.png
+2025-08-06 04:30:31,509 - scraper.database_handler - INFO - Medicine updated successfully: amis-100-mg-tablets-1-x-10s-pack-47956
+2025-08-06 04:30:31,510 - scraper.dawaai_scraper - INFO - Successfully processed: amis-100-mg-tablets-1-x-10s-pack-47956 - Amis 100 mg tablets 1 x 10's
+2025-08-06 04:30:34,180 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/amis-400-mg-tablets-1-x-10s-pack-47957.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:30:41,405 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 116
+2025-08-06 04:30:42,847 - scraper.image_downloader - INFO - Image downloaded successfully: 116.jpg
+2025-08-06 04:30:42,850 - scraper.database_handler - INFO - Medicine updated successfully: amis-400-mg-tablets-1-x-10s-pack-47957
+2025-08-06 04:30:42,851 - scraper.dawaai_scraper - INFO - Successfully processed: amis-400-mg-tablets-1-x-10s-pack-47957 - Amis 400 mg tablets 1 x 10's
+2025-08-06 04:30:48,600 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 117
+2025-08-06 04:30:50,019 - scraper.image_downloader - INFO - Image downloaded successfully: 117.png
+2025-08-06 04:30:50,025 - scraper.database_handler - INFO - Medicine updated successfully: adrance-25-mg-tablets-1-x-14s-pack-47984
+2025-08-06 04:30:50,025 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-25-mg-tablets-1-x-14s-pack-47984 - Adrance 25 mg tablets 1 x 14's
+2025-08-06 04:30:54,427 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 118
+2025-08-06 04:30:55,783 - scraper.image_downloader - INFO - Image downloaded successfully: 118.jpg
+2025-08-06 04:30:55,789 - scraper.database_handler - INFO - Medicine updated successfully: anplag-60-mg-tablet-2-x-7s-pack-48004
+2025-08-06 04:30:55,789 - scraper.dawaai_scraper - INFO - Successfully processed: anplag-60-mg-tablet-2-x-7s-pack-48004 - Anplag  60 mg tablet 2 x 7's
+2025-08-06 04:30:59,847 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 119
+2025-08-06 04:31:01,022 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:31:01,023 - scraper.dawaai_scraper - INFO - Successfully processed: admit-50-mg-tablets-1-x-14s-pack-48011 - Admit 50 mg tablets 1 x 14's
+2025-08-06 04:31:07,210 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 120
+2025-08-06 04:31:09,459 - scraper.image_downloader - INFO - Image downloaded successfully: 120.jpeg
+2025-08-06 04:31:09,476 - scraper.database_handler - INFO - Medicine updated successfully: adrance-10-mg-tablet-1-x-14s-pack-48014
+2025-08-06 04:31:09,477 - scraper.dawaai_scraper - INFO - Successfully processed: adrance-10-mg-tablet-1-x-14s-pack-48014 - Adrance 10 mg tablet 1 x 14's
+2025-08-06 04:31:15,097 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 121
+2025-08-06 04:31:16,515 - scraper.image_downloader - INFO - Image downloaded successfully: 121.jpg
+2025-08-06 04:31:16,520 - scraper.database_handler - INFO - Medicine updated successfully: aminoleban-500-ml-injection-pack-48016
+2025-08-06 04:31:16,521 - scraper.dawaai_scraper - INFO - Successfully processed: aminoleban-500-ml-injection-pack-48016 - Aminoleban Liquid 8 % injection 500 ml
+2025-08-06 04:31:23,616 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 122
+2025-08-06 04:31:25,615 - scraper.image_downloader - INFO - Image downloaded successfully: 122.jpg
+2025-08-06 04:31:25,623 - scraper.database_handler - INFO - Medicine updated successfully: atizor-200-mg-5-ml-suspension-25-ml-bottle-48062
+2025-08-06 04:31:25,624 - scraper.dawaai_scraper - INFO - Successfully processed: atizor-200-mg-5-ml-suspension-25-ml-bottle-48062 - Atizor 200 mg / 5 ml suspension 25 ml
+2025-08-06 04:31:32,552 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 123
+2025-08-06 04:31:33,594 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:31:33,595 - scraper.dawaai_scraper - INFO - Successfully processed: amsart-10-mg-160-mg-tablets-2-x-7s-pack-48090 - Amsart 10 mg / 160 mg tablets 2 x 7's
+2025-08-06 04:31:39,084 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 124
+2025-08-06 04:31:40,432 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:31:40,433 - scraper.dawaai_scraper - INFO - Successfully processed: alkeris-100-mg-tablet-3-x-10s-pack-48114 - Alkeris 100 mg tablet 3 x 10's
+2025-08-06 04:31:48,463 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 125
+2025-08-06 04:31:49,860 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:31:49,861 - scraper.dawaai_scraper - INFO - Successfully processed: antial-10-mg-tablets-2-x-10s-pack-48132 - Antial 10 mg tablets 2 x 10's
+2025-08-06 04:31:58,547 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 126
+2025-08-06 04:32:00,552 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:32:00,553 - scraper.dawaai_scraper - INFO - Successfully processed: av-sartan-5-mg-80-mg-tablets-1-x-14s-pack-48200 - Av-Sartan 5 mg / 80 mg tablets 1 x 14's
+2025-08-06 04:32:05,951 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 127
+2025-08-06 04:32:07,492 - scraper.image_downloader - INFO - Image downloaded successfully: 127.jpg
+2025-08-06 04:32:07,498 - scraper.database_handler - INFO - Medicine updated successfully: actrac-20-mg-soft-gelatin-capsules-3-x-10s-pack-48277
+2025-08-06 04:32:07,498 - scraper.dawaai_scraper - INFO - Successfully processed: actrac-20-mg-soft-gelatin-capsules-3-x-10s-pack-48277 - Actrac 20 mg  3 x 10's
+2025-08-06 04:32:15,030 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 128
+2025-08-06 04:32:16,526 - scraper.image_downloader - INFO - Image downloaded successfully: 128.jpg
+2025-08-06 04:32:16,530 - scraper.database_handler - INFO - Medicine updated successfully: advit-d-200000-iu-injection-im-1-x-1-ml-ampoule-oral-im-pack-48322
+2025-08-06 04:32:16,531 - scraper.dawaai_scraper - INFO - Successfully processed: advit-d-200000-iu-injection-im-1-x-1-ml-ampoule-oral-im-pack-48322 - Advit-D 200,000 IU injection im 1 x 1 ml Ampoule Oral /
+2025-08-06 04:32:22,979 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 129
+2025-08-06 04:32:24,154 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:32:24,154 - scraper.dawaai_scraper - INFO - Successfully processed: aromek-25-mg-tablets-1-x-10s-bottle-49053 - Aromek 2.5 mg tablets 10 Tablets Bottle
+2025-08-06 04:32:28,507 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 130
+2025-08-06 04:32:29,391 - scraper.image_downloader - INFO - Image downloaded successfully: 130.png
+2025-08-06 04:32:29,399 - scraper.database_handler - INFO - Medicine updated successfully: afdol-oral-solution-120-ml-bottle-49189
+2025-08-06 04:32:29,399 - scraper.dawaai_scraper - INFO - Successfully processed: afdol-oral-solution-120-ml-bottle-49189 - Afdol  oral solution 120 ml
+2025-08-06 04:32:33,645 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 131
+2025-08-06 04:32:35,547 - scraper.image_downloader - INFO - Image downloaded successfully: 131.jpg
+2025-08-06 04:32:35,552 - scraper.database_handler - INFO - Medicine updated successfully: afdol-10-mg-tablet-1-x-14s-pack-49190
+2025-08-06 04:32:35,553 - scraper.dawaai_scraper - INFO - Successfully processed: afdol-10-mg-tablet-1-x-14s-pack-49190 - Afdol 10 mg tablet 1 x 14's
+2025-08-06 04:32:41,620 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 132
+2025-08-06 04:32:43,956 - scraper.image_downloader - INFO - Image downloaded successfully: 132.jpg
+2025-08-06 04:32:43,963 - scraper.database_handler - INFO - Medicine updated successfully: algocin-250-mg-tablet-1-x-10s-pack-49191
+2025-08-06 04:32:43,964 - scraper.dawaai_scraper - INFO - Successfully processed: algocin-250-mg-tablet-1-x-10s-pack-49191 - Algocin 250 mg tablet 1 x 10's
+2025-08-06 04:32:48,506 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 133
+2025-08-06 04:32:49,201 - scraper.image_downloader - INFO - Image downloaded successfully: 133.jpg
+2025-08-06 04:32:49,204 - scraper.database_handler - INFO - Medicine updated successfully: algocin-500-mg-tablet-1-x-10s-pack-49192
+2025-08-06 04:32:49,205 - scraper.dawaai_scraper - INFO - Successfully processed: algocin-500-mg-tablet-1-x-10s-pack-49192 - Algocin 500 mg tablet 1 x 10's
+2025-08-06 04:32:54,096 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 134
+2025-08-06 04:32:55,398 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:32:55,399 - scraper.dawaai_scraper - INFO - Successfully processed: all-d-drops-10-ml-pack-49239 - All-D  drops 10 ml
+2025-08-06 04:33:00,166 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 135
+2025-08-06 04:33:01,792 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:01,793 - scraper.dawaai_scraper - INFO - Successfully processed: avec-10-mg-tablets-1-x-20s-pack-49513 - Avec 10 mg tablet 1 x 20's
+2025-08-06 04:33:09,094 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 136
+2025-08-06 04:33:10,923 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:10,923 - scraper.dawaai_scraper - INFO - Successfully processed: avec-5-mg-5-ml-syrup-120-ml-bottle-49625 - Avec   syrup 120 ml
+2025-08-06 04:33:14,961 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 137
+2025-08-06 04:33:17,160 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:17,161 - scraper.dawaai_scraper - INFO - Successfully processed: azocam-ds-500-mg-tablets-1-x-6s-pack-49810 - Azocam-DS 500 mg tablets 1 x 6's
+2025-08-06 04:33:22,627 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 138
+2025-08-06 04:33:23,488 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:23,489 - scraper.dawaai_scraper - INFO - Successfully processed: amstan-10-mg-160-mg-tablets-1-x-14s-pack-50032 - Amstan 10 mg / 160 mg tablets 1 x 14's
+2025-08-06 04:33:30,169 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 139
+2025-08-06 04:33:31,217 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:31,218 - scraper.dawaai_scraper - INFO - Successfully processed: amstan-5-mg-160-mg-tablets-1-x-14s-pack-50033 - Amstan 5 mg / 160 mg tablets 1 x 14's
+2025-08-06 04:33:35,703 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 140
+2025-08-06 04:33:37,771 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:33:37,771 - scraper.dawaai_scraper - INFO - Successfully processed: address-10-mg-160-mg-tablets-4-x-7s-pack-50106 - Address 10 mg / 160 mg tablets 4 x 7's
+2025-08-06 04:33:43,998 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 141
+2025-08-06 04:33:46,125 - scraper.image_downloader - ERROR - Failed to download image https://product.dawaai.pk/200/cclabr50153_1685713072_1.webp: 404 Client Error: Not Found for url: https://product.dawaai.pk/200/cclabr50153_1685713072_1.webp
+2025-08-06 04:33:46,126 - scraper.dawaai_scraper - INFO - Successfully processed: abriva-plus-400-mg-100-mg-tablets-4-x-7s-pack-50153 - Abriva Plus 400 mg / 100 mg  tablet 4 x 7's
+2025-08-06 04:33:52,017 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 142
+2025-08-06 04:33:53,856 - scraper.image_downloader - INFO - Image downloaded successfully: 142.jpeg
+2025-08-06 04:33:53,861 - scraper.database_handler - INFO - Medicine updated successfully: arbi-150-mg-tablets-1-x-10s-pack-50183
+2025-08-06 04:33:53,862 - scraper.dawaai_scraper - INFO - Successfully processed: arbi-150-mg-tablets-1-x-10s-pack-50183 - ARBI 150 mg tablets 1 x 10's
+2025-08-06 04:33:59,459 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 143
+2025-08-06 04:34:01,012 - scraper.image_downloader - INFO - Image downloaded successfully: 143.jpeg
+2025-08-06 04:34:01,017 - scraper.database_handler - INFO - Medicine updated successfully: arbi-d-150-mg-125-mg-tablets-1-x-10s-pack-50184
+2025-08-06 04:34:01,017 - scraper.dawaai_scraper - INFO - Successfully processed: arbi-d-150-mg-125-mg-tablets-1-x-10s-pack-50184 - ARBI 150 mg / 12.5 mg tablets 1 x 10's
+2025-08-06 04:34:04,727 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 144
+2025-08-06 04:34:05,488 - scraper.image_downloader - INFO - Image downloaded successfully: 144.jpeg
+2025-08-06 04:34:05,491 - scraper.database_handler - INFO - Medicine updated successfully: arbi-300-mg-tablets-1-x-10s-pack-50185
+2025-08-06 04:34:05,492 - scraper.dawaai_scraper - INFO - Successfully processed: arbi-300-mg-tablets-1-x-10s-pack-50185 - ARBI 300 mg tablets 1 x 10's
+2025-08-06 04:34:09,053 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 145
+2025-08-06 04:34:11,116 - scraper.image_downloader - INFO - Image downloaded successfully: 145.jpeg
+2025-08-06 04:34:11,121 - scraper.database_handler - INFO - Medicine updated successfully: arbi-d-300-mg-125-mg-tablets-1-x-10s-pack-50186
+2025-08-06 04:34:11,122 - scraper.dawaai_scraper - INFO - Successfully processed: arbi-d-300-mg-125-mg-tablets-1-x-10s-pack-50186 - ARBI-D 300 mg / 12.5 mg tablets 1 x 10's
+2025-08-06 04:34:16,218 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 146
+2025-08-06 04:34:18,064 - scraper.image_downloader - INFO - Image downloaded successfully: 146.jpeg
+2025-08-06 04:34:18,069 - scraper.database_handler - INFO - Medicine updated successfully: arbi-d-300-mg-25-mg-tablets-2-x-7s-pack-50187
+2025-08-06 04:34:18,070 - scraper.dawaai_scraper - INFO - Successfully processed: arbi-d-300-mg-25-mg-tablets-2-x-7s-pack-50187 - ARBI-D 300 mg / 25 mg tablets 2 x 7's
+2025-08-06 04:34:23,497 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 147
+2025-08-06 04:34:25,787 - scraper.image_downloader - INFO - Image downloaded successfully: 147.jpeg
+2025-08-06 04:34:25,794 - scraper.database_handler - INFO - Medicine updated successfully: acefyl-cough-syrup-60-ml-pack-50189
+2025-08-06 04:34:25,795 - scraper.dawaai_scraper - INFO - Successfully processed: acefyl-cough-syrup-60-ml-pack-50189 - Acefyl 60 ml (brown)  cough syrup 60 ml
+2025-08-06 04:34:31,725 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 148
+2025-08-06 04:34:32,881 - scraper.image_downloader - INFO - Image downloaded successfully: 148.jpeg
+2025-08-06 04:34:32,888 - scraper.database_handler - INFO - Medicine updated successfully: admit-50-mg-500mg-tablets-2-x-7s-pack-50197
+2025-08-06 04:34:32,889 - scraper.dawaai_scraper - INFO - Successfully processed: admit-50-mg-500mg-tablets-2-x-7s-pack-50197 - Admit 50 mg / 500mg tablets 2 x 7's
+2025-08-06 04:34:39,098 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 149
+2025-08-06 04:34:41,120 - scraper.image_downloader - INFO - Image downloaded successfully: 149.jpeg
+2025-08-06 04:34:41,125 - scraper.database_handler - INFO - Medicine updated successfully: azitma-200-mg-5-ml-syrup-15-ml-pack-50247
+2025-08-06 04:34:41,126 - scraper.dawaai_scraper - INFO - Successfully processed: azitma-200-mg-5-ml-syrup-15-ml-pack-50247 - Azitma 200 mg / 5 ml  syrup 15 ml
+2025-08-06 04:34:47,041 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 150
+2025-08-06 04:34:49,113 - scraper.image_downloader - INFO - Image downloaded successfully: 150.jpeg
+2025-08-06 04:34:49,119 - scraper.database_handler - INFO - Medicine updated successfully: avega-sr-3-mg-tablets-1-x-10s-pack-50249
+2025-08-06 04:34:49,120 - scraper.dawaai_scraper - INFO - Successfully processed: avega-sr-3-mg-tablets-1-x-10s-pack-50249 - Avega 3 mg tablets 1 x 10's
+2025-08-06 04:34:53,654 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 151
+2025-08-06 04:34:54,484 - scraper.image_downloader - INFO - Image downloaded successfully: 151.jpeg
+2025-08-06 04:34:54,486 - scraper.database_handler - INFO - Medicine updated successfully: avega-sr-6-mg-tablets-1-x-10s-pack-50250
+2025-08-06 04:34:54,487 - scraper.dawaai_scraper - INFO - Successfully processed: avega-sr-6-mg-tablets-1-x-10s-pack-50250 - Avega 6 mg tablets 1 x 10's
+2025-08-06 04:35:01,182 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 152
+2025-08-06 04:35:02,094 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:35:02,095 - scraper.dawaai_scraper - INFO - Successfully processed: actrapid-hm-penfill-100iu-1-x-3-ml-pack-50273 - Actrapid HM Penfill 100 iu penfill injection 1 x 3 ml
+2025-08-06 04:35:08,201 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 153
+2025-08-06 04:35:10,163 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:35:10,163 - scraper.dawaai_scraper - INFO - Successfully processed: atorva-10-mg-tablets-2-x-10s-pack-50311 - Atorva 10 mg tablet 2 x 10's
+2025-08-06 04:35:15,948 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 154
+2025-08-06 04:35:17,768 - scraper.image_downloader - INFO - Image downloaded successfully: 154.jpeg
+2025-08-06 04:35:17,774 - scraper.database_handler - INFO - Medicine updated successfully: alphacoline-250-mg-2-ml-injection-10-amp-pack-50314
+2025-08-06 04:35:17,775 - scraper.dawaai_scraper - INFO - Successfully processed: alphacoline-250-mg-2-ml-injection-10-amp-pack-50314 - Alphacoline   injection 10 Amp
+2025-08-06 04:35:23,696 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 155
+2025-08-06 04:35:24,935 - scraper.image_downloader - INFO - Image downloaded successfully: 155.jpeg
+2025-08-06 04:35:24,940 - scraper.database_handler - INFO - Medicine updated successfully: aromasin-25-mg-tablet-1-x-15s-pack-50334
+2025-08-06 04:35:24,940 - scraper.dawaai_scraper - INFO - Successfully processed: aromasin-25-mg-tablet-1-x-15s-pack-50334 - Aromasin 25 mg   tablet 1 x 15's
+2025-08-06 04:35:32,072 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 156
+2025-08-06 04:35:34,230 - scraper.image_downloader - INFO - Image downloaded successfully: 156.png
+2025-08-06 04:35:34,236 - scraper.database_handler - INFO - Medicine updated successfully: ansaid-100mg-tablet-3-x-10s-pack-50349
+2025-08-06 04:35:34,237 - scraper.dawaai_scraper - INFO - Successfully processed: ansaid-100mg-tablet-3-x-10s-pack-50349 - Ansaid 100mg Tablet   tablet 3x10's
+2025-08-06 04:35:39,179 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 157
+2025-08-06 04:35:40,630 - scraper.image_downloader - INFO - Image downloaded successfully: 157.jpeg
+2025-08-06 04:35:40,637 - scraper.database_handler - INFO - Medicine updated successfully: normitab-pulse-tablet-2-x-7s-pack-1-50355
+2025-08-06 04:35:40,638 - scraper.dawaai_scraper - INFO - Successfully processed: normitab-pulse-tablet-2-x-7s-pack-1-50355 - Actogin   tablet 2x7's
+2025-08-06 04:35:47,949 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 158
+2025-08-06 04:35:49,070 - scraper.image_downloader - INFO - Image downloaded successfully: 158.jpg
+2025-08-06 04:35:49,075 - scraper.database_handler - INFO - Medicine updated successfully: arinac-forte-113
+2025-08-06 04:35:49,076 - scraper.dawaai_scraper - INFO - Successfully processed: arinac-forte-113 - Arinac Forte 400mg/60mg forte tablet 10x10's
+2025-08-06 04:35:52,389 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/Aripiptab-Tablet10-199.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:35:58,646 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 159
+2025-08-06 04:35:59,761 - scraper.image_downloader - INFO - Image downloaded successfully: 159.jpg
+2025-08-06 04:35:59,766 - scraper.database_handler - INFO - Medicine updated successfully: Aripiptab-Tablet10-199
+2025-08-06 04:35:59,767 - scraper.dawaai_scraper - INFO - Successfully processed: Aripiptab-Tablet10-199 - Aripip 10mg  tablet 30
+2025-08-06 04:36:07,003 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 160
+2025-08-06 04:36:07,825 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:36:07,826 - scraper.dawaai_scraper - INFO - Successfully processed: AmoxilCap-Capsule500-226 - Amoxil 500 mg capsule 1 x 20's
+2025-08-06 04:36:12,640 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 161
+2025-08-06 04:36:13,288 - scraper.image_downloader - INFO - Image downloaded successfully: 161.jpg
+2025-08-06 04:36:13,293 - scraper.database_handler - INFO - Medicine updated successfully: AdalatLA-Tablet30-264
+2025-08-06 04:36:13,294 - scraper.dawaai_scraper - INFO - Successfully processed: AdalatLA-Tablet30-264 - Adalat LA 30 mg tablet 20
+2025-08-06 04:36:17,014 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/arinac-351.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:36:24,254 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 162
+2025-08-06 04:36:25,330 - scraper.image_downloader - INFO - Image downloaded successfully: 162.jpg
+2025-08-06 04:36:25,335 - scraper.database_handler - INFO - Medicine updated successfully: arinac-351
+2025-08-06 04:36:25,336 - scraper.dawaai_scraper - INFO - Successfully processed: arinac-351 - Arinac Tab 200mg/30mg tablet 10x10's
+2025-08-06 04:36:31,784 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 163
+2025-08-06 04:36:32,585 - scraper.image_downloader - INFO - Image downloaded successfully: 163.jpg
+2025-08-06 04:36:32,593 - scraper.database_handler - INFO - Medicine updated successfully: Aripiptab-Tablet10-415
+2025-08-06 04:36:32,594 - scraper.dawaai_scraper - INFO - Successfully processed: Aripiptab-Tablet10-415 - Aripip 15mg  tablet 3x10's
+2025-08-06 04:36:37,369 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 164
+2025-08-06 04:36:39,736 - scraper.image_downloader - INFO - Image downloaded successfully: 164.png
+2025-08-06 04:36:39,742 - scraper.database_handler - INFO - Medicine updated successfully: arimidex-1mg-491
+2025-08-06 04:36:39,743 - scraper.dawaai_scraper - INFO - Successfully processed: arimidex-1mg-491 - Arimidex 1mg 1gm tablet 2x14's
+2025-08-06 04:36:46,399 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 165
+2025-08-06 04:36:47,671 - scraper.image_downloader - INFO - Image downloaded successfully: 165.png
+2025-08-06 04:36:47,678 - scraper.database_handler - INFO - Medicine updated successfully: avelox-400mg-496
+2025-08-06 04:36:47,678 - scraper.dawaai_scraper - INFO - Successfully processed: avelox-400mg-496 - Avelox 400mg tablet 1x5's
+2025-08-06 04:36:55,966 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 166
+2025-08-06 04:36:56,908 - scraper.image_downloader - INFO - Image downloaded successfully: 166.jpg
+2025-08-06 04:36:56,918 - scraper.database_handler - INFO - Medicine updated successfully: atarax-25mg-515
+2025-08-06 04:36:56,918 - scraper.dawaai_scraper - INFO - Successfully processed: atarax-25mg-515 - Atarax 25 mg tablet 2 x 25's
+2025-08-06 04:37:04,372 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 167
+2025-08-06 04:37:06,351 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:37:06,351 - scraper.dawaai_scraper - INFO - Successfully processed: ascard-plus-566 - Ascard Plus 81mg/75mg tablet 10
+2025-08-06 04:37:12,312 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 168
+2025-08-06 04:37:13,109 - scraper.image_downloader - INFO - Image downloaded successfully: 168.png
+2025-08-06 04:37:13,114 - scraper.database_handler - INFO - Medicine updated successfully: alp-05mg-604
+2025-08-06 04:37:13,114 - scraper.dawaai_scraper - INFO - Successfully processed: alp-05mg-604 - Alp 0.5mg tablet 3x10's
+2025-08-06 04:37:19,298 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 169
+2025-08-06 04:37:20,801 - scraper.image_downloader - INFO - Image downloaded successfully: 169.jpg
+2025-08-06 04:37:20,806 - scraper.database_handler - INFO - Medicine updated successfully: AmoxilCap-Capsule500-686
+2025-08-06 04:37:20,807 - scraper.dawaai_scraper - INFO - Successfully processed: AmoxilCap-Capsule500-686 - Amoxil 250 Mg 250mg capsule 5x20's
+2025-08-06 04:37:28,036 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 170
+2025-08-06 04:37:30,005 - scraper.image_downloader - INFO - Image downloaded successfully: 170.png
+2025-08-06 04:37:30,013 - scraper.database_handler - INFO - Medicine updated successfully: am-descol-510mg-907
+2025-08-06 04:37:30,013 - scraper.dawaai_scraper - INFO - Successfully processed: am-descol-510mg-907 - AM-Descol  5/10 mg tablet 2 x 7's
+2025-08-06 04:37:32,594 - scraper.dawaai_scraper - WARNING - Attempt 1 failed for https://dawaai.pk/medicine/alphagan--1041.html: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-08-06 04:37:41,533 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 171
+2025-08-06 04:37:43,871 - scraper.image_downloader - INFO - Image downloaded successfully: 171.jpg
+2025-08-06 04:37:43,875 - scraper.database_handler - INFO - Medicine updated successfully: alphagan--1041
+2025-08-06 04:37:43,876 - scraper.dawaai_scraper - INFO - Successfully processed: alphagan--1041 - Alphagan 0.2% eye drop 5ml
+2025-08-06 04:37:49,636 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 172
+2025-08-06 04:37:50,266 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:37:50,267 - scraper.dawaai_scraper - INFO - Successfully processed: atorva-10mg-1253 - Atorva 10 mg tablet 2 x 10's
+2025-08-06 04:37:54,152 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 173
+2025-08-06 04:37:55,831 - scraper.image_downloader - INFO - Image downloaded successfully: 173.jpg
+2025-08-06 04:37:55,839 - scraper.database_handler - INFO - Medicine updated successfully: adoxa-100mg-1268
+2025-08-06 04:37:55,840 - scraper.dawaai_scraper - INFO - Successfully processed: adoxa-100mg-1268 - Adoxa 100mg  tablet 30
+2025-08-06 04:38:02,091 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 174
+2025-08-06 04:38:03,755 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:38:03,756 - scraper.dawaai_scraper - INFO - Successfully processed: axcin-500mg-1355 - Axcin 500mg tablet 1x10's
+2025-08-06 04:38:08,230 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 175
+2025-08-06 04:38:10,194 - scraper.image_downloader - INFO - Image downloaded successfully: 175.jpg
+2025-08-06 04:38:10,199 - scraper.database_handler - INFO - Medicine updated successfully: alfa-d-05mcg-1387
+2025-08-06 04:38:10,199 - scraper.dawaai_scraper - INFO - Successfully processed: alfa-d-05mcg-1387 - Alfa-D 0.5mcg  tablet
+2025-08-06 04:38:16,129 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 176
+2025-08-06 04:38:18,769 - scraper.image_downloader - INFO - Image downloaded successfully: 176.png
+2025-08-06 04:38:18,774 - scraper.database_handler - INFO - Medicine updated successfully: azomax-suspension-1417
+2025-08-06 04:38:18,774 - scraper.dawaai_scraper - INFO - Successfully processed: azomax-suspension-1417 - Azomax 200mg/5ml dry suspension 15ml
+2025-08-06 04:38:23,239 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 177
+2025-08-06 04:38:24,754 - scraper.image_downloader - INFO - Image downloaded successfully: 177.png
+2025-08-06 04:38:24,759 - scraper.database_handler - INFO - Medicine updated successfully: artholex-advanced-1449
+2025-08-06 04:38:24,760 - scraper.dawaai_scraper - INFO - Successfully processed: artholex-advanced-1449 - Artholex Advanced  caplets 3 x 10's
+2025-08-06 04:38:31,220 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 178
+2025-08-06 04:38:33,498 - scraper.image_downloader - INFO - Image downloaded successfully: 178.jpg
+2025-08-06 04:38:33,503 - scraper.database_handler - INFO - Medicine updated successfully: aerokast-10mg-1485
+2025-08-06 04:38:33,504 - scraper.dawaai_scraper - INFO - Successfully processed: aerokast-10mg-1485 - Aerokast 10mg tablet 14's
+2025-08-06 04:38:38,118 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 179
+2025-08-06 04:38:39,078 - scraper.image_downloader - INFO - Image downloaded successfully: 179.jpg
+2025-08-06 04:38:39,083 - scraper.database_handler - INFO - Medicine updated successfully: advantan-fatty-ointment-1527
+2025-08-06 04:38:39,084 - scraper.dawaai_scraper - INFO - Successfully processed: advantan-fatty-ointment-1527 - Advantan Fatty Ointment 0.1% fatty ointment 10gm
+2025-08-06 04:38:45,160 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 180
+2025-08-06 04:38:46,158 - scraper.image_downloader - INFO - Image downloaded successfully: 180.jpg
+2025-08-06 04:38:46,163 - scraper.database_handler - INFO - Medicine updated successfully: advantan-ointment-1550
+2025-08-06 04:38:46,164 - scraper.dawaai_scraper - INFO - Successfully processed: advantan-ointment-1550 - Advantan Ointment 0.1% ointment 10gm
+2025-08-06 04:38:52,795 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 181
+2025-08-06 04:38:54,710 - scraper.image_downloader - INFO - Image downloaded successfully: 181.jpg
+2025-08-06 04:38:54,717 - scraper.database_handler - INFO - Medicine updated successfully: augmentin-infant-drops-625mgml-1615
+2025-08-06 04:38:54,718 - scraper.dawaai_scraper - INFO - Successfully processed: augmentin-infant-drops-625mgml-1615 - Augmentin  Infant Drops 62.5mg/ml  drops 20 ml
+2025-08-06 04:39:02,066 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 182
+2025-08-06 04:39:04,897 - scraper.image_downloader - INFO - Image downloaded successfully: 182.png
+2025-08-06 04:39:04,902 - scraper.database_handler - INFO - Medicine updated successfully: artem-ds-plus-80480-1622
+2025-08-06 04:39:04,903 - scraper.dawaai_scraper - INFO - Successfully processed: artem-ds-plus-80480-1622 - Artem Plus 80mg/480mg tablet 1x6's
+2025-08-06 04:39:09,791 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 183
+2025-08-06 04:39:11,093 - scraper.image_downloader - INFO - Image downloaded successfully: 183.jpg
+2025-08-06 04:39:11,098 - scraper.database_handler - INFO - Medicine updated successfully: anafortan-plus-1964
+2025-08-06 04:39:11,099 - scraper.dawaai_scraper - INFO - Successfully processed: anafortan-plus-1964 - Anafortan Plus  coated tablets 3x10's
+2025-08-06 04:39:15,352 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 184
+2025-08-06 04:39:17,733 - scraper.image_downloader - INFO - Image downloaded successfully: 184.jpg
+2025-08-06 04:39:17,738 - scraper.database_handler - INFO - Medicine updated successfully: ampress-5mg-2716
+2025-08-06 04:39:17,738 - scraper.dawaai_scraper - INFO - Successfully processed: ampress-5mg-2716 - Ampress 5mg  tablet 20
+2025-08-06 04:39:24,358 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 185
+2025-08-06 04:39:26,730 - scraper.image_downloader - INFO - Image downloaded successfully: 185.jpg
+2025-08-06 04:39:26,733 - scraper.database_handler - INFO - Medicine updated successfully: acicon-20mg-5287
+2025-08-06 04:39:26,734 - scraper.dawaai_scraper - INFO - Successfully processed: acicon-20mg-5287 - Acicon 20mg  tablet 10
+2025-08-06 04:39:32,056 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 186
+2025-08-06 04:39:33,441 - scraper.image_downloader - INFO - Image downloaded successfully: 186.jpg
+2025-08-06 04:39:33,460 - scraper.database_handler - INFO - Medicine updated successfully: acylex-200mg-5291
+2025-08-06 04:39:33,462 - scraper.dawaai_scraper - INFO - Successfully processed: acylex-200mg-5291 - Acylex 200mg 200mg tablet 5x5's
+2025-08-06 04:39:39,116 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 187
+2025-08-06 04:39:41,284 - scraper.image_downloader - INFO - Image downloaded successfully: 187.png
+2025-08-06 04:39:41,290 - scraper.database_handler - INFO - Medicine updated successfully: ampiclox-syrup-250mg-5ml-5296
+2025-08-06 04:39:41,291 - scraper.dawaai_scraper - INFO - Successfully processed: ampiclox-syrup-250mg-5ml-5296 - Ampiclox Syrup 250mg/ 5ml 250mg suspension 90ml
+2025-08-06 04:39:46,830 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 188
+2025-08-06 04:39:47,863 - scraper.image_downloader - INFO - Image downloaded successfully: 188.png
+2025-08-06 04:39:47,869 - scraper.database_handler - INFO - Medicine updated successfully: ampiclox-250mg-5297
+2025-08-06 04:39:47,870 - scraper.dawaai_scraper - INFO - Successfully processed: ampiclox-250mg-5297 - Ampiclox 250mg 250mg capsule 5x20's
+2025-08-06 04:39:52,761 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 189
+2025-08-06 04:39:54,873 - scraper.image_downloader - INFO - Image downloaded successfully: 189.jpg
+2025-08-06 04:39:54,879 - scraper.database_handler - INFO - Medicine updated successfully: ampiclox-500mg-5298
+2025-08-06 04:39:54,880 - scraper.dawaai_scraper - INFO - Successfully processed: ampiclox-500mg-5298 - Ampiclox 500mg 500mg capsule 5x20
+2025-08-06 04:39:58,888 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 190
+2025-08-06 04:40:00,752 - scraper.image_downloader - INFO - Image downloaded successfully: 190.jpg
+2025-08-06 04:40:00,759 - scraper.database_handler - INFO - Medicine updated successfully: apsin-40mg-5299
+2025-08-06 04:40:00,760 - scraper.dawaai_scraper - INFO - Successfully processed: apsin-40mg-5299 - Apsin 40mg 40 mg tablet 1 x 10's
+2025-08-06 04:40:06,177 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 191
+2025-08-06 04:40:08,183 - scraper.image_downloader - INFO - Image downloaded successfully: 191.png
+2025-08-06 04:40:08,188 - scraper.database_handler - INFO - Medicine updated successfully: acylex-400mg-5441
+2025-08-06 04:40:08,189 - scraper.dawaai_scraper - INFO - Successfully processed: acylex-400mg-5441 - Acylex 400mg 400mg tablet 2x10's
+2025-08-06 04:40:14,983 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 192
+2025-08-06 04:40:16,256 - scraper.image_downloader - INFO - Image downloaded successfully: 192.jpg
+2025-08-06 04:40:16,261 - scraper.database_handler - INFO - Medicine updated successfully: abocal-calciumvitdcb6-tablet-5466
+2025-08-06 04:40:16,262 - scraper.dawaai_scraper - INFO - Successfully processed: abocal-calciumvitdcb6-tablet-5466 - Abocal  tablet effervescent 1x10's
+2025-08-06 04:40:23,294 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 193
+2025-08-06 04:40:24,111 - scraper.image_downloader - WARNING - URL does not point to an image: 
+2025-08-06 04:40:24,112 - scraper.dawaai_scraper - INFO - Successfully processed: acyclovir-500-mg-10ml-injection-5488 - Acyclovir 500 mg injection iv 10 ml
+2025-08-06 04:40:31,134 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 194
+2025-08-06 04:40:32,739 - scraper.image_downloader - INFO - Image downloaded successfully: 194.jpg
+2025-08-06 04:40:32,746 - scraper.database_handler - INFO - Medicine updated successfully: acylex-acyclovir-200mg5ml-60-ml-suspension-5489
+2025-08-06 04:40:32,747 - scraper.dawaai_scraper - INFO - Successfully processed: acylex-acyclovir-200mg5ml-60-ml-suspension-5489 - ACYLEX (Acyclovir) 200mg/5ml 60 ML SUSPENSION 200mg/5ml suspension 60ml
+2025-08-06 04:40:39,889 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 195
+2025-08-06 04:40:42,083 - scraper.image_downloader - INFO - Image downloaded successfully: 195.jpg
+2025-08-06 04:40:42,089 - scraper.database_handler - INFO - Medicine updated successfully: advantan-cream-10g-5501
+2025-08-06 04:40:42,090 - scraper.dawaai_scraper - INFO - Successfully processed: advantan-cream-10g-5501 - Advantan Cream 10g 0.1% cream 10gm
+2025-08-06 04:40:47,417 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 196
+2025-08-06 04:40:49,028 - scraper.image_downloader - INFO - Image downloaded successfully: 196.jpg
+2025-08-06 04:40:49,033 - scraper.database_handler - INFO - Medicine updated successfully: aerokast-4mg-tab-5504
+2025-08-06 04:40:49,033 - scraper.dawaai_scraper - INFO - Successfully processed: aerokast-4mg-tab-5504 - Aerokast 4mg Tab  tablet
+2025-08-06 04:40:54,989 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 197
+2025-08-06 04:40:57,063 - scraper.image_downloader - INFO - Image downloaded successfully: 197.jpg
+2025-08-06 04:40:57,068 - scraper.database_handler - INFO - Medicine updated successfully: anafortan-plus-inj-5553
+2025-08-06 04:40:57,069 - scraper.dawaai_scraper - INFO - Successfully processed: anafortan-plus-inj-5553 - Anafortan Plus  injection 6 Amp x 4ml
+2025-08-06 04:41:02,085 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 198
+2025-08-06 04:41:04,417 - scraper.image_downloader - INFO - Image downloaded successfully: 198.jpg
+2025-08-06 04:41:04,425 - scraper.database_handler - INFO - Medicine updated successfully: atorva-20mg-tab-5580
+2025-08-06 04:41:04,425 - scraper.dawaai_scraper - INFO - Successfully processed: atorva-20mg-tab-5580 - Atorva 20mg tablet 10's
+2025-08-06 04:41:08,808 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 199
+2025-08-06 04:41:10,004 - scraper.image_downloader - INFO - Image downloaded successfully: 199.png
+2025-08-06 04:41:10,015 - scraper.database_handler - INFO - Medicine updated successfully: augmentin-15625mg5ml-syrup-60ml-5583
+2025-08-06 04:41:10,016 - scraper.dawaai_scraper - INFO - Successfully processed: augmentin-15625mg5ml-syrup-60ml-5583 - Augmentin 156.25mg suspension 90ml
+2025-08-06 04:41:14,802 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 200
+2025-08-06 04:41:15,853 - scraper.image_downloader - INFO - Image downloaded successfully: 200.jpg
+2025-08-06 04:41:15,859 - scraper.database_handler - INFO - Medicine updated successfully: aurora-5mg-tab-5587
+2025-08-06 04:41:15,860 - scraper.dawaai_scraper - INFO - Successfully processed: aurora-5mg-tab-5587 - Aurora 5mg tablet 1x10's
+2025-08-06 04:41:22,805 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 201
+2025-08-06 04:41:25,582 - scraper.image_downloader - INFO - Image downloaded successfully: 201.png
+2025-08-06 04:41:25,588 - scraper.database_handler - INFO - Medicine updated successfully: aerokast-sachet-4mg-14s-9189
+2025-08-06 04:41:25,589 - scraper.dawaai_scraper - INFO - Successfully processed: aerokast-sachet-4mg-14s-9189 - Aerokast Powder Sachet 4mg  powder
+2025-08-06 04:41:32,147 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 202
+2025-08-06 04:41:33,146 - scraper.image_downloader - INFO - Image downloaded successfully: 202.jpg
+2025-08-06 04:41:33,151 - scraper.database_handler - INFO - Medicine updated successfully: amoxil-forte-250mg-90-ml-syp-9204
+2025-08-06 04:41:33,152 - scraper.dawaai_scraper - INFO - Successfully processed: amoxil-forte-250mg-90-ml-syp-9204 - AMOXIL FORTE 250mg 90 ML SYP 250mg suspension 90ml
+2025-08-06 04:41:37,734 - scraper.database_handler - INFO - Medicine inserted successfully with SystemId: 203
+2025-08-06 04:41:39,854 - scraper.image_downloader - INFO - Image downloaded successfully: 203.jpg
+2025-08-06 04:41:39,859 - scraper.database_handler - INFO - Medicine updated successfully: amplus-500mg-inj-9206
+2025-08-06 04:41:39,860 - scraper.dawaai_scraper - INFO - Successfully processed: amplus-500mg-inj-9206 - Amplus 500mg  injection 1 Vial
